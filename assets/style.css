@@ -1,0 +1,47 @@
+body {
+  width:100%;
+}
+
+@font-face {
+    font-family: avenirBook;
+    src: url(../assets/fonts/avenirbook.ttf);
+}
+@font-face {
+    font-family: avenirMedium;
+    src: url(../assets/fonts/avenirMedium.ttf);
+}
+@font-face {
+    font-family: avenirHeavy;
+    src: url(../assets/fonts/avenirHeavy.ttf);
+}
+
+.navbar-nav .nav-item {
+ line-height: 80px;
+}
+
+.nav-item {
+  color: #283C52;
+  font-size: 18px;
+  font-family: avenirHeavy;
+}
+.nav-item:hover {
+  color: #EA4750;
+}
+.navbar-nav {
+  width: 100%;
+  background-color: white;
+  height: 80px;
+}
+.navbar {
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.navbar-btn {
+  border-radius: 3;
+  background-color: #283C52;
+  line-height: 30px;
+  padding: 10px 20px 5px 20px;
+  text-align: center;
+}
