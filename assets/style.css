@@ -1,5 +1,6 @@
 body {
   width:100%;
+  padding-top: 85px;
 }
 
 @font-face {
@@ -44,4 +45,8 @@ body {
   line-height: 30px;
   padding: 10px 20px 5px 20px;
   text-align: center;
+}
+
+#about:hover {
+color: #EA4750
 }
