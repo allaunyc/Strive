@@ -45,14 +45,26 @@ body {
   padding: 10px 20px 5px 20px;
   text-align: center;
 }
-
+.learn-container-row{
+  padding: 60px;
+  width: 100%;
+}
 .learn-container{
   padding-top: 100px;
   height: 500px;
   background-color: #F6F6F6;
+  font-size: 25px;
+  font-family: avenirBook;
 }
 .learn-header {
   font-size: 25px;
   font-family: avenirHeavy;
   margin: 0 auto;
+}
+.learn-caption {
+  font-size: 18px;
+}
+
+.learn-more-btn {
+  background-color: #283C52;
 }
