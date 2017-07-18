@@ -47,6 +47,14 @@ body {
   text-align: center;
 }
 
-#about:hover {
-color: #EA4750
+.learn-container{
+  padding-top: 100px;
+  height: 500px;
+  background-color: #F6F6F6;
+}
+.learn-header {
+  font-size: 25px;
+  font-family: avenirHeavy;
+  margin: 0 auto;
+
 }
