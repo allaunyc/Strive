@@ -199,6 +199,20 @@ line-height: 80px;
   background: url('../assets/images/plus-circle.png');
   /*position: relative;*/
 }
+
+.box-description {
+  font-family: avenirHeavy;
+  font-size: 14px;
+}
+
+.take-title {
+  font-family: avenirHeavy;
+  color: #EA4750;
+}
+.college-selection-box {
+  background-color:  #F6F6F6;
+}
+
 .learn-caption {
   font-size: 18px;
 }
