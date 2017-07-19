@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+  <!-- <script src="../jQuery/events.js"></script> -->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -80,58 +80,101 @@
 
 
     <!-- LEARN MORE SECTION -->
-
     <div class="learn-container container">
-      <div class="row">
-        <div class="learn-section col-lg-6">
-          <a name="learn"></a>
-          <div class="row">
-            <div class="learn-header col-lg-6">
-              <h1> Applying to college should pump you up - not stress you out. </h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="learn-caption col-lg-6 offset-lg-1">
-                We offer personalized college counseling to help you navigate the college process. The first session is on us.
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <form class="learn-form col-lg-6">
-          <div class="row">
-            <div class="form-group col-lg-6">
-              <input class="form-control" id="name-input" placeholder="Full Name">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-lg-6 offset-lg-1">
-              <input type="email" class="form-control" id="email-input" placeholder="Email">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-lg-6 offset-lg-1">
-              <button type="submit" class="btn btn-primary">LEARN MORE</button>
-            </div>
-          </div>
-      </form>
-    </div>
+         <div class="row learn-container-row">
+           <div class="learn-section col-lg-6">
+             <a name="learn"></a>
+             <div class="row">
+               <div class="learn-header col-lg-10">
+                 <h1> Applying to college should pump you up - not stress you out. </h1>
+               </div>
+             </div>
+             <div class="row">
+               <div class="learn-caption col-lg-10 offset-lg-1">
+                   We offer personalized college counseling to help you navigate the college process. The first session is on us.
+               </div>
+             </div>
+           </div>
+           <form class="learn-form col-lg-6">
+             <div class="row">
+               <div class="form-group col-lg-10">
+                 <input class="form-control" id="name-input" placeholder="Full Name">
+               </div>
+             </div>
+             <div class="row">
+               <div class="form-group col-lg-10 offset-lg-1">
+                 <input type="email" class="form-control" id="email-input" placeholder="Email">
+               </div>
+             </div>
+             <div class="row">
+               <div class="form-group col-lg-10 offset-lg-1">
+                 <button type="submit" class="btn btn-primary learn-more-btn">LEARN MORE</button>
+               </div>
+             </div>
+           </form>
+         </div>
+       </div>
 
 
     <!-- ABOUT US SECTION -->
-    <div class="about-container">
-      <div class="about-section" id="about">
-        <!-- <a name="about"></a> -->
+    <div class="about-container container">
+      <div class="row about-container-row">
+      <div class="about-section col-lg-4">
+        <a name="about"></a>
+        <div class="row">
+          <div class-"about-header col-lg-8">
+            <h1 class="about-text">About <br> Us
+            <span class="vertical-line" style="height: 125px"></span>
+          </h1>
+          </div>
+        </div>
+        </div>
+        <div class="about-content col-lg-8">
+          <div class="row">
+            <div class="blog-group col-lg-11">
+              <p>
+                College is a cornerstone of the American Dream, and most families <br>
+                do not feel they are making an informed decision about college.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="blog-group col-lg-10 offset-lg-1">
+              <p>
+                We are working with students, parents, counselors, and schools
+                to make high-quality college readiness accessible to all families.
+              </p>
+          </div>
+        </div>
+        <br>
+          <div class="row">
+            <div class="about-us-footer col-lg-10 offset-lg-1">
+            <form action="https://medium.com/@madetostrive/introducing-strive-16d500fce30a">
+              <input type="submit" class="btn btn-secondary footer-item"value="Visit Our Blog"/>
+            </form>
+                <h3 class="blog-group col-lg-8 offset-lg-5 footer-item" style="width:10%; padding-right: 50px; padding-left: 25px;">OR</h3>
+                <div class="email-text col-lg-10">
+                <div class="row" style="height: 50px">
 
-
+                <div class="blog-group inline-block">meet our team by emailing us at
+                <!-- <div class="row"> -->
+                <p class="email-link">hello@madetostrive.com</p> </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
 
     <!-- OUR APPROACH SECTION -->
     <div class="approach-container">
-      <div class="approach-section" id="approach">
-        <!-- <a name="approach"></a> -->
+      <div class="approach-section">
+        <a name="approach"></a>
 
 
       </div>
@@ -139,10 +182,107 @@
 
     <!-- COLLEGE PROCESS SECTION -->
     <div class="process-container">
-      <div class="process-section" id="process">
-        <!-- <a name="process"></a> -->
-
-
+      <div class="row process-container-row">
+      <div class="process-section col-lg-4">
+        <a name="process"></a>
+        <div class="row">
+          <div class-"process-header col-lg-8">
+            <h1 class="process-text">College <br> Process
+            <span class="vertical-line-process" style="height: 125px"></span>
+          </h1>
+          </div>
+        </div>
+      </div>
+        <div class="process-content col-lg-3">
+          <div class="row">
+            <div class="category col-lg-12">
+              <p>College Selection
+                <span class="circlelogo">
+                <img alt="Brand" src="../assets/images/plus-circle.png">
+                </span>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12">
+              <p>Essays
+                <span class="circlelogo">
+                <img alt="Brand" src="../assets/images/plus-circle.png">
+                </span>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12">
+              <p>Recommendations
+                <span class="circlelogo">
+                <img alt="Brand" src="../assets/images/plus-circle.png">
+                </span>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12">
+              <p>Interviews
+                <span class="circlelogo">
+                <img alt="Brand" src="../assets/images/plus-circle.png">
+                </span>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12">
+              <p>Academics
+                <span class="circlelogo">
+                <img alt="Brand" src="../assets/images/plus-circle.png">
+                </span>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12">
+              <p>Extracurriculars
+                <span class="circlelogo">
+              <img alt="Brand" src="../assets/images/plus-circle.png">
+              </span>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12">
+              <p>Financial Aid
+                <span class="circlelogo">
+              <img alt="Brand" src="../assets/images/plus-circle.png">
+            </span>
+              </p>
+            </div>
+          </div>
+          <br>
+          </div>
+          <div class="imaginary-column col-lg-4">
+            <div class="row">
+              <div class=" col-lg-12">
+                <div class="college-selection-box">
+                  <p>Picking schools is hard. Here are some resources to make your
+                  life easier:
+                  <ul>
+                    <li>Resource 1</li>
+                    <br>
+                    <li>Resource 2</li>
+                    <br>
+                    <li>Resource 3</li>
+                  </ul>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
 
