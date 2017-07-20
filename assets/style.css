@@ -2,7 +2,7 @@ body {
  width:100%;
  margin: 0;
  padding: 0;
- position: relative;
+
 }
 /* FONTS */
 @font-face {
@@ -40,8 +40,9 @@ line-height: 80px;
  font-size: 18px;
  font-family: avenirHeavy;
 }
-.nav-item:hover {
+.nav-item a:hover {
  color: #EA4750 ;
+ text-decoration: none;
 }
 
 .navbar-btn {
@@ -101,7 +102,7 @@ line-height: 80px;
   float: left;
 }
 .submission-received {
-  display: none;
+  visibility: hidden;
   font-size: 18px;
 }
 hr {
@@ -555,10 +556,12 @@ hr {
 .approach-info-header{
   font-size: 18px;
   font-family: avenirMedium;
+  padding-left: 5px;
 }
 .approach-info-caption{
   font-size: 18px;
   font-family: avenirBook;
+  transform: translateX(30px);
 }
 
 .approach-info-header{
@@ -566,6 +569,9 @@ hr {
 }
 .approach-quad {
   padding:40px;
+}
+.approach-icons{
+  transform: translateY(-20px);
 }
 /*.vertical-line {
   width: 1px;

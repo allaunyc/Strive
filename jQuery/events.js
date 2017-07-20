@@ -1,7 +1,8 @@
 $(document).ready(function() {
   // on click, the "thank u for signing up" div will appear
-  $(".learn-more-btn").click(function() {
-    $(".submission-received").css("display", "block");
+  $(".learn-more-btn").click(function(event) {
+    event.preventDefault();
+    $(".submission-received").css("visibility", "visible");
   });
 
 var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo-recommendations img",
