@@ -19,28 +19,20 @@
   <link rel="stylesheet" href="../assets/style.css" type="text/css">
   <script type="text/javascript" src="../jQuery/events.js"></script>
   <!-- <link href="../assets/fonts/avenirbook.ttf" rel="stylesheet" type="text/css" > -->
+
+  <style>
+  label > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+  }
+  </style>
+
 </head>
 <body>
   <div class="strive-page">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <!-- <div class="navbar-header">
 
-        <!- ADD IN LATER ONCE WORKING WITH MOBILE DIMENSIONS -->
-
-        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button> -->
-
-      <!-- <a class="navbar-brand nav-item col-lg-3" href="#">
-      <img alt="Brand" src="../assets/images/Logo.png">
-    </a> -->
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <div class="nav navbar-nav">
             <!-- <div class="container-fluid"> -->
@@ -51,13 +43,13 @@
               </a>
             </div>
             <div class="nav-item col-lg-3 offset-lg-1">
-              <a style="text-decoration: none;" href="#about"> About Us </a>
+              <a href="#about"> About Us </a>
             </div>
             <div class="nav-item col-lg-3 offset-lg-1">
-              <a style="text-decoration: none;" href="#approach"> Our Approach </a>
+              <a href="#approach"> Our Approach </a>
             </div>
             <div class="nav-item col-lg-3 offset-lg-1">
-              <a style="text-decoration: none;" href="#process"> College Process </a>
+              <a href="#process"> College Process </a>
             </div>
             <div class="nav-item col-lg-1">
               <a href="https://madetostrive.typeform.com/to/ds8SFP">
@@ -124,7 +116,7 @@
           <div class="row">
             <div class="left-header col-lg-8">
               <h1 class="left-text">About <br> Us
-                <span class="vertical-line-process" style="height: 125px"></span>
+                <!-- <span class="vertical-line-process" style="height: 125px"></span> -->
               </h1>
             </div>
           </div>
@@ -180,7 +172,7 @@
           <div class="row">
             <div class="left-header col-lg-8 ">
               <h1 class="left-text">Our <br> Approach
-                <span class="vertical-line-process" style="height: 125px"></span>
+                <!-- <span class="vertical-line-process" style="height: 125px"></span> -->
               </h1>
             </div>
           </div>
@@ -190,7 +182,8 @@
             <div class="approach-quad col-lg-6">
               <!-- include icon -->
               <div class="approach-info-title">
-                <span class="approach-icons"><img src="../assets/images/usericon.png" alt="User-icon"></span>
+                <span> <img src="../assets/images/usericon.png"
+                  alt="usericon"></span>
                 <span class="approach-info-header"> Student-Centered </span>
               </div>
               <div class="approach-info-caption">
@@ -202,7 +195,8 @@
             <div class="approach-quad col-lg-6 offset-lg-1">
               <!-- include icon -->
               <div class="approach-info-title">
-                <span class="approach-icons"><img src="../assets/images/hashtagicon.png" alt="Hashtag-icon"></span>
+                <span> <img src="../assets/images/hashtagicon.png"
+                  alt="hashtagicon"> </span>
                 <span class="approach-info-header"> Data-Driven </span>
               </div>
               <div class="approach-info-caption">
@@ -216,7 +210,8 @@
             <div class="approach-quad col-lg-6">
               <!-- include icon -->
               <div class="approach-info-title">
-                <span class="approach-icons"><img src="../assets/images/comprehensiveicon.png" alt="Comprehensive-icon"></span>
+                <span> <img src="../assets/images/comprehensiveicon.png"
+                  alt="comprehensiveicon"> </span>
                 <span class="approach-info-header"> Comprehensive </span>
               </div>
               <div class="approach-info-caption">
@@ -228,7 +223,8 @@
             <div class="approach-quad col-lg-6 offset-lg-1">
               <!-- include icon -->
               <div class="approach-info-title">
-                <span class="approach-icons"><img src="../assets/images/growthorientedicon.png" alt="GrowthOriented-icon"></span>
+                <span> <img src="../assets/images/growthorientedicon.png"
+                  alt="growthorientedicon"> </span>
                 <span class="approach-info-header"> Growth-Oriented </span>
               </div>
               <div class="approach-info-caption">
@@ -250,20 +246,21 @@
           <!-- <a name="process"></a> -->
           <div class="row">
             <div class="left-header col-lg-8">
-              <h1 class="left-text" id="left-text-college">College <br> Process
-              <span class="vertical-line-process" style="height: 125px"></span>
+              <h1 class="left-text">College <br> Process
+              <!-- <span class="vertical-line-process" style="height: 125px"></span> -->
             </h1>
             </div>
           </div>
         </div>
         <div class="process-content col-lg-3">
+          <form>
           <div class="row">
             <div class="category col-lg-12">
               <p>College Selection
-                <span class="circlelogo-selection">
-                <img alt="Brand" src="../assets/images/check-circle.png"
-                style="transform: translateY(-4px);">
-                </span>
+                <label class="radio-icons radio-icon-selection">
+                  <input type="radio" name="fb" value="small" checked/>
+                  <img src="../assets/images/check-circle.png">
+                </label>
               </p>
             </div>
           </div>
@@ -271,10 +268,10 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Essays
-                <span id="circlelogo-essays">
-                <img alt="Brand" src="../assets/images/plus-circle.png"
-                style="transform: translateY(-4px);">
-                </span>
+                <label class="radio-icons radio-icon-essays">
+                  <input type="radio" name="fb" value="small" />
+                  <img src="../assets/images/plus-circle.png">
+                </label>
               </p>
             </div>
           </div>
@@ -282,10 +279,10 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Recommendations
-                <span id="circlelogo-recommendations">
-                <img alt="Brand" src="../assets/images/plus-circle.png"
-                style="transform: translateY(-4px);">
-                </span>
+                <label class="radio-icons radio-icon-recommendations">
+                  <input type="radio" name="fb" value="small" />
+                  <img src="../assets/images/plus-circle.png">
+                </label>
               </p>
             </div>
           </div>
@@ -293,10 +290,10 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Interviews
-                <span id="circlelogo-interviews">
-                <img alt="Brand" src="../assets/images/plus-circle.png"
-                style="transform: translateY(-4px);">
-                </span>
+                <label class="radio-icons radio-icon-interviews">
+                  <input type="radio" name="fb" value="small" />
+                  <img src="../assets/images/plus-circle.png">
+                </label>
               </p>
             </div>
           </div>
@@ -304,10 +301,10 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Academics
-                <span id="circlelogo-academics">
-                <img alt="Brand" src="../assets/images/plus-circle.png"
-                style="transform: translateY(-4px);">
-                </span>
+                <label class="radio-icons radio-icon-academics">
+                  <input type="radio" name="fb" value="small" />
+                  <img src="../assets/images/plus-circle.png">
+                </label>
               </p>
             </div>
           </div>
@@ -315,10 +312,10 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Extracurriculars
-                <span id="circlelogo-extracurriculars">
-              <img alt="Brand" src="../assets/images/plus-circle.png"
-              style="transform: translateY(-4px);">
-              </span>
+                <label class="radio-icons radio-icon-extracurriculars">
+                  <input type="radio" name="fb" value="small" />
+                  <img src="../assets/images/plus-circle.png">
+                </label>
               </p>
             </div>
           </div>
@@ -326,13 +323,14 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Financial Aid
-                <span id="circlelogo-financial-aid">
-              <img alt="Brand" src="../assets/images/plus-circle.png"
-              style="transform: translateY(-4px);">
-            </span>
+                <label class="radio-icons radio-icon-financial-aid">
+                  <input type="radio" name="fb" value="small" />
+                  <img src="../assets/images/plus-circle.png">
+                </label>
               </p>
             </div>
           </div>
+        </form>
           <br>
           </div>
           <div class="imaginary-column col-lg-4">
