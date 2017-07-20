@@ -315,7 +315,7 @@ hr {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translateY(-8px);
+    transform: translate(18px, -48px);
     flex: 1;
 }
 
@@ -326,7 +326,7 @@ hr {
     border-right: 18px solid #F6F6F6;
     border-bottom: 18px solid transparent;
     float:left;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 .process-container-row{
@@ -345,7 +345,7 @@ hr {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translateY(-8px);
+    transform: translate(18px, -48px);
     display: none;
     flex: 1;
 }
@@ -370,7 +370,7 @@ hr {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translateY(-8px);
+    transform: translate(18px, -48px);
     display: none;
     flex: 1;
 }
@@ -395,7 +395,7 @@ hr {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translateY(-8px);
+    transform: translate(18px, -48px);
     display: none;
     flex: 1;
 }
@@ -420,7 +420,7 @@ hr {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translateY(-8px);
+    transform: translate(18px, -48px);
     display: none;
     flex: 1;
 }
@@ -445,7 +445,7 @@ hr {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translateY(-8px);
+    transform: translate(18px, -48px);
     display: none;
     flex: 1;
 }
@@ -470,7 +470,7 @@ hr {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translateY(-8px);
+    transform: translate(18px, -48px);
     display: none;
     flex: 1;
 }
@@ -494,6 +494,7 @@ hr {
 }
 .learn-more-btn:hover {
   background-color: #EA4750;
+  border-color: #EA4750;
 }
 .input-field {
   line-height: 40px;
@@ -514,7 +515,6 @@ hr {
 .container-row{
   padding: 60px;
   width: 100%;
-  transform: translateY(20%);
 }
 .approach-header{
   font-size: 25px;
@@ -560,6 +560,7 @@ footer {
 .footer-container {
   /*height: 40px;*/
   /*display: inline-block;*/
+  width: 100%;
 }
 .footer-copyright {
   float:left;
