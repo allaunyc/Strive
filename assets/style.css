@@ -2,6 +2,7 @@ body {
  width:100%;
  margin: 0;
  padding: 0;
+ position: relative;
 }
 /* FONTS */
 @font-face {
@@ -580,16 +581,25 @@ footer {
   background-color: #F6F6F6;
   width:100%;
   height: 40px;
+  /*bottom: -60px;
+    position: absolute;*/
+  padding-bottom:0;
+  margin-bottom: 0;
 }
 .footer-container {
   /*height: 40px;*/
   /*display: inline-block;*/
   width: 100%;
+  /*display: flex;
+  justify-content: flex-end;*/
+  /*padding-bottom:0;
+  margin-bottom: 0;*/
 }
 .footer-copyright {
   float:left;
   padding: 10px;
   font-family: avenirMedium;
+  font-size: 14px;
 }
 .footer-icon-group {
   float: right;
