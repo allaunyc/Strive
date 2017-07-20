@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <script src="../jQuery/events.js"></script> -->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -19,7 +18,6 @@
   <!-- Our Styles -->
   <link rel="stylesheet" href="../assets/style.css" type="text/css">
   <script type="text/javascript" src="../jQuery/events.js"></script>
-  <!-- <script src="../jQuery/events.js"></script> -->
   <!-- <link href="../assets/fonts/avenirbook.ttf" rel="stylesheet" type="text/css" > -->
 </head>
 <body>
@@ -260,8 +258,9 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>College Selection
-                <span class="circlelogo">
-                <img alt="Brand" src="../assets/images/plus-circle.png">
+                <span class="circlelogo-selection">
+                <img alt="Brand" src="../assets/images/check-circle.png"
+                style="transform: translateY(-4px);">
                 </span>
               </p>
             </div>
@@ -270,8 +269,9 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Essays
-                <span class="circlelogo">
-                <img alt="Brand" src="../assets/images/plus-circle.png">
+                <span id="circlelogo-essays">
+                <img alt="Brand" src="../assets/images/plus-circle.png"
+                style="transform: translateY(-4px);">
                 </span>
               </p>
             </div>
@@ -280,8 +280,9 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Recommendations
-                <span class="circlelogo">
-                <img alt="Brand" src="../assets/images/plus-circle.png">
+                <span id="circlelogo-recommendations">
+                <img alt="Brand" src="../assets/images/plus-circle.png"
+                style="transform: translateY(-4px);">
                 </span>
               </p>
             </div>
@@ -290,8 +291,9 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Interviews
-                <span class="circlelogo">
-                <img alt="Brand" src="../assets/images/plus-circle.png">
+                <span id="circlelogo-interviews">
+                <img alt="Brand" src="../assets/images/plus-circle.png"
+                style="transform: translateY(-4px);">
                 </span>
               </p>
             </div>
@@ -300,8 +302,9 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Academics
-                <span class="circlelogo">
-                <img alt="Brand" src="../assets/images/plus-circle.png">
+                <span id="circlelogo-academics">
+                <img alt="Brand" src="../assets/images/plus-circle.png"
+                style="transform: translateY(-4px);">
                 </span>
               </p>
             </div>
@@ -310,8 +313,9 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Extracurriculars
-                <span class="circlelogo">
-              <img alt="Brand" src="../assets/images/plus-circle.png">
+                <span id="circlelogo-extracurriculars">
+              <img alt="Brand" src="../assets/images/plus-circle.png"
+              style="transform: translateY(-4px);">
               </span>
               </p>
             </div>
@@ -320,8 +324,9 @@
           <div class="row">
             <div class="category col-lg-12">
               <p>Financial Aid
-                <span class="circlelogo">
-              <img alt="Brand" src="../assets/images/plus-circle.png">
+                <span id="circlelogo-financial-aid">
+              <img alt="Brand" src="../assets/images/plus-circle.png"
+              style="transform: translateY(-4px);">
             </span>
               </p>
             </div>
@@ -331,19 +336,203 @@
           <div class="imaginary-column col-lg-4">
             <div class="row">
               <div class=" col-lg-12">
-                <div class="college-selection-box">
-                  <p>Picking schools is hard. Here are some resources to make your
-                  life easier:
-                  <ul>
+                <div class="triangle-left-selection"></div>
+                <div id="college-selection-box">
+                  <p class="box-description">Picking schools is hard. Here are some resources to
+                   make your life easier:
+                   <br>
+                  <ul class="box-description">
                     <li>Resource 1</li>
                     <br>
                     <li>Resource 2</li>
                     <br>
                     <li>Resource 3</li>
                   </ul>
+                  <br>
+                 <p class="box-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Sed non magna mi. In ac venenatis orci, quis
+                  bibendum risus.
+                </p>
+                  <br>
+               </p>
+                <p class="take-title">OUR TAKE</p>
+                <p  class="box-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Sed non magna mi. In ac venenatis orci, quis
+                  bibendum risus.
                 </p>
               </div>
+
+              <div class="triangle-left-essays"></div>
+              <div id="essays-box">
+                <p class="box-description">Writing essays is hard. Here are some resources to
+                 make your life easier:
+                 <br>
+                <ul class="box-description">
+                  <li>Example 1</li>
+                  <br>
+                  <li>Example 2</li>
+                  <br>
+                  <li>Example 3</li>
+                </ul>
+                <br>
+               <p class="box-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed non magna mi. In ac venenatis orci, quis
+                bibendum risus.
+              </p>
+                <br>
+             </p>
+              <p class="take-title">OUR TAKE</p>
+              <p  class="box-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed non magna mi. In ac venenatis orci, quis
+                bibendum risus.
+              </p>
+            </div>
+
+            <div class="triangle-left-recommendations"></div>
+            <div id="recommendations-box">
+              <p class="box-description">Figuring out who to ask for
+              recommendations is hard. Here are some resources to
+               make your life easier:
+               <br>
+              <ul class="box-description">
+                <li>Method 1</li>
+                <br>
+                <li>Method 2</li>
+                <br>
+                <li>Method 3</li>
+              </ul>
+              <br>
+             <p class="box-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed non magna mi. In ac venenatis orci, quis
+              bibendum risus.
+            </p>
+              <br>
+           </p>
+            <p class="take-title">OUR TAKE</p>
+            <p  class="box-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed non magna mi. In ac venenatis orci, quis
+              bibendum risus.
+            </p>
           </div>
+
+          <div class="triangle-left-interviews"></div>
+          <div id="interviews-box">
+            <p class="box-description">Tackling interviews is hard.
+            Here are some tips to get through it easier:
+             <br>
+            <ul class="box-description">
+              <li>Stay calm</li>
+              <br>
+              <li>Be yourself</li>
+              <br>
+              <li>Dont panic</li>
+            </ul>
+            <br>
+           <p class="box-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Sed non magna mi. In ac venenatis orci, quis
+            bibendum risus.
+          </p>
+            <br>
+         </p>
+          <p class="take-title">OUR TAKE</p>
+          <p  class="box-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Sed non magna mi. In ac venenatis orci, quis
+            bibendum risus.
+          </p>
+        </div>
+
+        <div class="triangle-left-academics"></div>
+        <div id="academics-box">
+          <p class="box-description">ACADEMICS ACADEMICS ACADEMICS.
+          Here are some tips to get through it easier:
+           <br>
+          <ul class="box-description">
+            <li>grades</li>
+            <br>
+            <li>the dreaded SAT</li>
+            <br>
+            <li>class participation</li>
+          </ul>
+          <br>
+         <p class="box-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Sed non magna mi. In ac venenatis orci, quis
+          bibendum risus.
+        </p>
+          <br>
+       </p>
+        <p class="take-title">OUR TAKE</p>
+        <p  class="box-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Sed non magna mi. In ac venenatis orci, quis
+          bibendum risus.
+        </p>
+      </div>
+
+      <div class="triangle-left-extracurriculars"></div>
+      <div id="extracurriculars-box">
+        <p class="box-description">EXTRACURRICULARS.
+        What hobbies or interests do you have outside of class?
+         <br>
+        <ul class="box-description">
+          <li>sports</li>
+          <br>
+          <li>music</li>
+          <br>
+          <li>coding</li>
+        </ul>
+        <br>
+       <p class="box-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed non magna mi. In ac venenatis orci, quis
+        bibendum risus.
+      </p>
+        <br>
+     </p>
+      <p class="take-title">OUR TAKE</p>
+      <p  class="box-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed non magna mi. In ac venenatis orci, quis
+        bibendum risus.
+      </p>
+    </div>
+
+    <div class="triangle-left-financial-aid"></div>
+    <div id="financial-aid-box">
+      <p class="box-description">How to pay for college?
+        What resources can you turn to for help?
+       <br>
+      <ul class="box-description">
+        <li>FAFSA</li>
+        <br>
+        <li>student loans</li>
+        <br>
+        <li>scholarships</li>
+      </ul>
+      <br>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+      <br>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+  </div>
+
         </div>
       </div>
       </div>
@@ -366,21 +555,24 @@
           <li class="footer-icon">
               <a href="https://twitter.com/made_to_strive">
                 <div class="twitter-logo">
-                  <img src="../assets/images/twitter.png" >
+                  <img src="../assets/images/twitter.png"
+                  style="transform: translateY(-1px);">
                 </div>
               </a>
           </li>
           <li class="footer-icon">
               <a href="https://www.instagram.com/made_to_strive/">
                 <div class="instagram-logo">
-                  <img src="../assets/images/instagram.png">
+                  <img src="../assets/images/instagram.png"
+                  style="transform: translateY(-1px);">
                 </div>
               </a>
           </li>
           <li class="footer-icon">
               <a href="hello@madetostrive.com">
                 <div class="mail-logo">
-                  <img src="../assets/images/mail.png">
+                  <img src="../assets/images/mail.png"
+                  style="transform: translateY(-2px);">
                 </div>
               </a>
           </li>
