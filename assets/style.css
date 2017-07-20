@@ -182,22 +182,86 @@ line-height: 80px;
   text-align: right;
 }
 
+.process-section {
+  flex: 1;
+}
+
 .category {
   font-family: avenirMedium;
   font-size: 18px;
   background: none;
+  display: inline-block;
+  flex: 1;
 }
 
-.circlelogo {
+.circlelogo-selection {
   background: url('../assets/images/plus-circle-pinkred.png');
   background-repeat: no-repeat !important;
-  /*position: absolute;*/
 }
 
-.circlelogo img:hover {
+.circlelogo-selection img:hover {
   opacity: 0;
   background: url('../assets/images/plus-circle.png');
-  /*position: relative;*/
+}
+
+#circlelogo-essays {
+  background-image: url('../assets/images/plus-circle-pinkred.png');
+  background-repeat: no-repeat !important;
+}
+
+#circlelogo-essays img:hover {
+  opacity: 0;
+  background-image: url('../assets/images/plus-circle.png');
+}
+
+#circlelogo-recommendations {
+  background: url('../assets/images/plus-circle-pinkred.png');
+  background-repeat: no-repeat !important;
+}
+
+#circlelogo-recommendations img:hover {
+  opacity: 0;
+  background: url('../assets/images/plus-circle.png');
+}
+
+#circlelogo-interviews {
+  background: url('../assets/images/plus-circle-pinkred.png');
+  background-repeat: no-repeat !important;
+}
+
+#circlelogo-interviews img:hover {
+  opacity: 0;
+  background: url('../assets/images/plus-circle.png');
+}
+
+#circlelogo-academics {
+  background: url('../assets/images/plus-circle-pinkred.png');
+  background-repeat: no-repeat !important;
+}
+
+#circlelogo-academics img:hover {
+  opacity: 0;
+  background: url('../assets/images/plus-circle.png');
+}
+
+#circlelogo-extracurriculars {
+  background: url('../assets/images/plus-circle-pinkred.png');
+  background-repeat: no-repeat !important;
+}
+
+#circlelogo-extracurriculars img:hover {
+  opacity: 0;
+  background: url('../assets/images/plus-circle.png');
+}
+
+#circlelogo-financial-aid {
+  background: url('../assets/images/plus-circle-pinkred.png');
+  background-repeat: no-repeat !important;
+}
+
+#circlelogo-financial-aid img:hover {
+  opacity: 0;
+  background: url('../assets/images/plus-circle.png');
 }
 
 .box-description {
@@ -209,8 +273,185 @@ line-height: 80px;
   font-family: avenirHeavy;
   color: #EA4750;
 }
-.college-selection-box {
-  background-color:  #F6F6F6;
+
+#college-selection-box {
+    background-color: #F6F6F6;
+    height: 400px;
+    width: 333px;
+    float:left;
+    padding: 7px;
+    border-style: solid #F6F6F6;
+    border-top-color: #F6F6F6;
+    font-family: avenirHeavy;
+    transform: translateY(-8px);
+    flex: 1;
+}
+
+.triangle-left-selection {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #F6F6F6;
+    border-bottom: 18px solid transparent;
+    float:left;
+    transform: translateY(-2px);
+}
+
+.process-container-row{
+  padding: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#essays-box {
+    background-color: #F6F6F6;
+    height: 400px;
+    width: 333px;
+    float:left;
+    padding: 7px;
+    border-style: solid #F6F6F6;
+    border-top-color: #F6F6F6;
+    font-family: avenirHeavy;
+    transform: translateY(-8px);
+    display: none;
+    flex: 1;
+}
+
+.triangle-left-essays {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #F6F6F6;
+    border-bottom: 18px solid transparent;
+    float:left;
+    transform: translateY(50px);
+    display: none;
+}
+
+#recommendations-box {
+    background-color: #F6F6F6;
+    height: 400px;
+    width: 333px;
+    float:left;
+    padding: 7px;
+    border-style: solid #F6F6F6;
+    border-top-color: #F6F6F6;
+    font-family: avenirHeavy;
+    transform: translateY(-8px);
+    display: none;
+    flex: 1;
+}
+
+.triangle-left-recommendations {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #F6F6F6;
+    border-bottom: 18px solid transparent;
+    float:left;
+    transform: translateY(105px);
+    display: none;
+}
+
+#interviews-box {
+    background-color: #F6F6F6;
+    height: 400px;
+    width: 333px;
+    float:left;
+    padding: 7px;
+    border-style: solid #F6F6F6;
+    border-top-color: #F6F6F6;
+    font-family: avenirHeavy;
+    transform: translateY(-8px);
+    display: none;
+    flex: 1;
+}
+
+.triangle-left-interviews {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #F6F6F6;
+    border-bottom: 18px solid transparent;
+    float:left;
+    transform: translateY(160px);
+    display: none;
+}
+
+#academics-box {
+    background-color: #F6F6F6;
+    height: 400px;
+    width: 333px;
+    float:left;
+    padding: 7px;
+    border-style: solid #F6F6F6;
+    border-top-color: #F6F6F6;
+    font-family: avenirHeavy;
+    transform: translateY(-8px);
+    display: none;
+    flex: 1;
+}
+
+.triangle-left-academics {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #F6F6F6;
+    border-bottom: 18px solid transparent;
+    float:left;
+    transform: translateY(215px);
+    display: none;
+}
+
+#extracurriculars-box {
+    background-color: #F6F6F6;
+    height: 400px;
+    width: 333px;
+    float:left;
+    padding: 7px;
+    border-style: solid #F6F6F6;
+    border-top-color: #F6F6F6;
+    font-family: avenirHeavy;
+    transform: translateY(-8px);
+    display: none;
+    flex: 1;
+}
+
+.triangle-left-extracurriculars {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #F6F6F6;
+    border-bottom: 18px solid transparent;
+    float:left;
+    transform: translateY(272px);
+    display: none;
+}
+
+#financial-aid-box {
+    background-color: #F6F6F6;
+    height: 400px;
+    width: 333px;
+    float:left;
+    padding: 7px;
+    border-style: solid #F6F6F6;
+    border-top-color: #F6F6F6;
+    font-family: avenirHeavy;
+    transform: translateY(-8px);
+    display: none;
+    flex: 1;
+}
+
+.triangle-left-financial-aid {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-right: 18px solid #F6F6F6;
+    border-bottom: 18px solid transparent;
+    float:left;
+    transform: translateY(325px);
+    display: none;
 }
 
 .learn-caption {
@@ -306,7 +547,7 @@ footer img{
 }
 
 .twitter-logo {
-  background: url('../assets/images/twitterpink.png');
+  background: url('../assets/images/twitter-pinkred.png');
   background-repeat: no-repeat !important;
   background-position: 10px 0px;
 }
@@ -315,7 +556,7 @@ footer img{
 }
 
 .instagram-logo {
-  background: url('../assets/images/instagrampink.png');
+  background: url('../assets/images/instagram-pinkred.png');
   background-repeat: no-repeat !important;
   background-position: 10px -1px;
 }
@@ -324,7 +565,7 @@ footer img{
 }
 
 .mail-logo {
-  background: url('../assets/images/mailpink.png');
+  background: url('../assets/images/mail-pinkred.png');
   background-repeat: no-repeat !important;
   background-position: 10px 0px;
 }
