@@ -55,6 +55,17 @@ line-height: 80px;
   margin:0;
 }
 
+/*#about {
+  text-decoration: none;
+}
+
+#approach {
+  text-decoration: none;
+}
+
+#process {
+  text-decoration: none;
+}*/
 
 /*LEARN CONTAINER*/
 .row {
@@ -125,14 +136,14 @@ hr {
   height: 500px;
   background-color: white;
 }
-
+/*
 .vertical-line {
   width: 1px;
   background-color:#EA4750;
   float: right;
   height: 100%;
   transform: translate(-140px, -55px);
-}
+}*/
 
 .left-text {
   transform: translate(170px, 60px);
@@ -196,6 +207,15 @@ hr {
   transform: translateX(-80px);
 }
 
+#left-text-college {
+  transform: translate(52px, 60px);
+  font-weight: normal;
+  font-family: avenirHeavy;
+  /*padding: 2em;*/
+}
+
+
+
 /*.process-text {
   transform: translate(170px, 60px);
   font-weight: normal;
@@ -203,7 +223,7 @@ hr {
 }*/
 
 .vertical-line-process {
-  width: 1px;
+  width: 2px;
   background-color:#EA4750;
   float: right;
   height: 100%;
@@ -329,11 +349,15 @@ hr {
     transform: translateY(-3px);
 }
 
-.process-container-row{
+/*.process-container-row{
   padding: 60px;
   width: 100%;
   display: flex;
   flex-direction: row;
+}*/
+
+.process-container {
+  height: 500px;
 }
 
 #essays-box {
@@ -542,13 +566,13 @@ hr {
 .approach-quad {
   padding:40px;
 }
-.vertical-line {
+/*.vertical-line {
   width: 1px;
   background-color:#EA4750;
   float:right;
   height:100%;
   transform: translate(0, -70px);
-}
+}*/
 
 /*FOOTER STYLING*/
 footer {
