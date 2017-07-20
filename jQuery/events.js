@@ -9,7 +9,7 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
 "#circlelogo-interviews img", "#circlelogo-academics img", "#circlelogo-extracurriculars img",
 "#circlelogo-financial-aid img"];
 
-  $(".circlelogo-selection img").click(function() {
+  $(".radio-icon-selection").click(function() {
       // var self = this;
       // $.each(icons, function(index, value) {
       //   if (value === self) {
@@ -36,18 +36,8 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $("#circlelogo-essays img").click(function() {
-    $(this).attr("src", "../assets/images/check-circle.png");
-
-    var self = this;
-    $.each(icons, function(index, value) {
-      if (index !== 1) {
-        $(this).attr('src', '../assets/images/plus-circle.png');
-      }
-      if ($(this).attr("src", "../assets/images/check-circle.png")) {
-        $(this).attr('src', '../assets/images/plus-circle.png');
-      }
-    });
+  $(".radio-icon-essays img").click(function() {
+    // $(this).attr("src", "../assets/images/check-circle.png");
 
       $("#essays-box").show();
       $(".triangle-left-essays").show();
@@ -66,8 +56,8 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $("#circlelogo-recommendations img").click(function() {
-    $(this).attr("src", "../assets/images/check-circle.png");
+  $(".radio-icon-recommendations img").click(function() {
+    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#recommendations-box").show();
       $(".triangle-left-recommendations").show();
 
@@ -85,8 +75,8 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $("#circlelogo-interviews img").click(function() {
-    $(this).attr("src", "../assets/images/check-circle.png");
+  $(".radio-icon-interviews img").click(function() {
+    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#interviews-box").show();
       $(".triangle-left-interviews").show();
 
@@ -104,8 +94,8 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $("#circlelogo-academics img").click(function() {
-    $(this).attr("src", "../assets/images/check-circle.png");
+  $(".radio-icon-academics img").click(function() {
+    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#academics-box").show();
       $(".triangle-left-academics").show();
 
@@ -123,8 +113,8 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $("#circlelogo-extracurriculars img").click(function() {
-    $(this).attr("src", "../assets/images/check-circle.png");
+  $(".radio-icon-extracurriculars img").click(function() {
+    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#extracurriculars-box").show();
       $(".triangle-left-extracurriculars").show();
 
@@ -142,8 +132,10 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $("#circlelogo-financial-aid img").click(function() {
-    $(this).attr("src", "../assets/images/check-circle.png");
+  $(".radio-icon-financial-aid img").click(function() {
+    // $(this).attr("src", "../assets/images/check-circle.png");
+    // $("input").attr("checked", true);
+
       $("#financial-aid-box").show();
       $(".triangle-left-financial-aid").show();
 
@@ -160,5 +152,14 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $("#recommendations-box").hide();
       $(".triangle-left-recommendations").hide();
     });
+
+    $("input").on('click', function() {
+         $(this).attr("checked", true);
+         console.log('Check if get here' )
+        $(this).siblings().attr("src", "../assets/images/check-circle.png");
+        // console.log($(".radio-icons").children().not(this));
+        $(".radio-icons").children().not($(this).siblings()).attr("src", "../assets/images/plus-circle.png");
+
+    })
 
 });
