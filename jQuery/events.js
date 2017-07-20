@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $("#plusPNG img").hover(function() {
-    $(this).css("background-image", "../assets/images/plus-circle-pinkred.png")
+  // on click, the "thank u for signing up" div will appear
+  $(".learn-more-btn").click(function() {
+    $(".submission-received").css("display", "block");
   });
 });
