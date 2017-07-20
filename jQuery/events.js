@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo-recommendations img",
 "#circlelogo-interviews img", "#circlelogo-academics img", "#circlelogo-extracurriculars img",
 "#circlelogo-financial-aid img"];
@@ -153,5 +154,11 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-extracurriculars").hide();
       $("#recommendations-box").hide();
       $(".triangle-left-recommendations").hide();
+    });
+
+  // on click, the "thank u for signing up" div will appear
+  $(".learn-more-btn").click(function() {
+    $(".submission-received").css("display", "block");
   });
+
 });

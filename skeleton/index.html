@@ -22,66 +22,58 @@
 </head>
 <body>
   <div class="strive-page">
-      <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <!-- <div class="navbar-header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- <div class="navbar-header">
 
-              <!- ADD IN LATER ONCE WORKING WITH MOBILE DIMENSIONS -->
+        <!- ADD IN LATER ONCE WORKING WITH MOBILE DIMENSIONS -->
 
-              <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button> -->
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
 
-              <!-- <a class="navbar-brand nav-item col-lg-3" href="#">
+      <!-- <a class="navbar-brand nav-item col-lg-3" href="#">
+      <img alt="Brand" src="../assets/images/Logo.png">
+    </a> -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="nav navbar-nav">
+            <!-- <div class="container-fluid"> -->
+            <!-- <div class="row"> -->
+            <div class="nav-item col-lg-2 ">
+              <a class="navbar-brand" href="#">
                 <img alt="Brand" src="../assets/images/Logo.png">
-              </a> -->
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <!-- <div class="container-fluid"> -->
-                <!-- <div class="row"> -->
-                  <div class="nav-item col-lg-2 ">
-                    <a class="navbar-brand" href="#">
-                      <img alt="Brand" src="../assets/images/Logo.png">
-                    </a>
-                  </div>
-                  <div class="nav-item col-lg-3 offset-lg-1">
-                    <!-- <li> <a href="#about"> About Us </a></li> -->
-                    <li a href="#about"> About Us </a></li>
-
-                  </div>
-                  <div class="nav-item col-lg-3 offset-lg-1">
-                    <!-- <li> <a href="#approach"> Our Approach </a></li> -->
-                    <li a href="#approach"> Our Approach </a></li>
-                  </div>
-                  <div class="nav-item col-lg-3 offset-lg-1">
-                  <li a href="#process"> College Process </a></li>
-                  <!-- <li a href="#process"> College Process </a></li> -->
-                  </div>
-                  <div class="nav-item col-lg-1">
-                    <li>
-                      <a href="https://madetostrive.typeform.com/to/ds8SFP">
-                        <button type="button" class="btn btn-primary navbar-btn">Sign Up </button>
-                      </a>
-                    </li>
-                  </div>
-                <!-- </div> -->
-              <!-- </div> -->
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+              </a>
+            </div>
+            <div class="nav-item col-lg-3 offset-lg-1">
+              <a href="#about"> About Us </a>
+            </div>
+            <div class="nav-item col-lg-3 offset-lg-1">
+              <a href="#approach"> Our Approach </a>
+            </div>
+            <div class="nav-item col-lg-3 offset-lg-1">
+              <a href="#process"> College Process </a>
+            </div>
+            <div class="nav-item col-lg-1">
+              <a href="https://madetostrive.typeform.com/to/ds8SFP">
+                <button type="button" class="btn btn-primary navbar-btn">Sign Up </button>
+              </a>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
 
-
-
     <!-- LEARN MORE SECTION -->
-    <div class="learn-container container">
-         <div class="row learn-container-row">
+    <div class="learn-container">
+         <div class="row container-row">
            <div class="learn-section col-lg-6">
              <a name="learn"></a>
              <div class="row">
@@ -95,20 +87,27 @@
                </div>
              </div>
            </div>
-           <form class="learn-form col-lg-6">
-             <div class="row">
+           <form method="POST" action="" class="learn-form col-lg-6">
+             <div class="row form-row">
                <div class="form-group col-lg-10">
-                 <input class="form-control" id="name-input" placeholder="Full Name">
+                 <input style="height:50px" class="form-control form-input" name="name-input" id="name-input" placeholder="Full Name">
                </div>
              </div>
-             <div class="row">
+             <div class="row form-row">
                <div class="form-group col-lg-10 offset-lg-1">
-                 <input type="email" class="form-control" id="email-input" placeholder="Email">
+                 <input style="height:50px" type="email" class="form-control form-input" name="email-input" id="email-input" placeholder="Email">
                </div>
              </div>
-             <div class="row">
+             <div class="row form-row">
                <div class="form-group col-lg-10 offset-lg-1">
-                 <button type="submit" class="btn btn-primary learn-more-btn">LEARN MORE</button>
+                 <button style="height:50px" type="submit" class="btn btn-primary btn-block learn-more-btn form-input">LEARN MORE</button>
+               </div>
+             </div>
+             <div class="row form-row submission-received">
+               <div class="form-group col-lg-10 offset-lg-1 submission-text">
+                 <span class="glyphicon glyphicon-ok"></span>
+                 Submission received! Expect an email from us soon.
+                 <hr style="width: 490px">
                </div>
              </div>
            </form>
@@ -118,16 +117,16 @@
 
     <!-- ABOUT US SECTION -->
     <div class="about-container container">
-      <div class="row about-container-row">
-      <div class="about-section col-lg-4">
-        <a name="about"></a>
-        <div class="row">
-          <div class-"about-header col-lg-8">
-            <h1 class="about-text">About <br> Us
-            <span class="vertical-line" style="height: 125px"></span>
-          </h1>
+      <div class="row container-row">
+        <div class="left-section col-lg-4">
+          <a name="about"></a>
+          <div class="row">
+            <div class="left-header col-lg-8">
+              <h1 class="left-text">About <br> Us
+                <span class="vertical-line-process" style="height: 125px"></span>
+              </h1>
+            </div>
           </div>
-        </div>
         </div>
         <div class="about-content col-lg-8">
           <div class="row">
@@ -145,24 +144,24 @@
                 We are working with students, parents, counselors, and schools
                 to make high-quality college readiness accessible to all families.
               </p>
-          </div>
-        </div>
-        <br>
-          <div class="row">
-            <div class="about-us-footer col-lg-10 offset-lg-1">
-            <form action="https://medium.com/@madetostrive/introducing-strive-16d500fce30a">
-              <input type="submit" class="btn btn-secondary footer-item"value="Visit Our Blog"/>
-            </form>
-                <h3 class="blog-group col-lg-8 offset-lg-5 footer-item" style="width:10%; padding-right: 50px; padding-left: 25px;">OR</h3>
-                <div class="email-text col-lg-10">
-                <div class="row" style="height: 50px">
-
-                <div class="blog-group inline-block">meet our team by emailing us at
-                <!-- <div class="row"> -->
-                <p class="email-link">hello@madetostrive.com</p> </div>
-              </div>
             </div>
           </div>
+          <br>
+          <div class="row">
+            <div class="about-us-footer col-lg-10 offset-lg-1">
+              <form action="https://medium.com/@madetostrive/introducing-strive-16d500fce30a">
+                <input type="submit" class="btn btn-secondary footer-item"value="Visit Our Blog"/>
+              </form>
+              <h3 class="blog-group col-lg-8 offset-lg-5 footer-item" style="width:10%; padding-right: 50px; padding-left: 25px;">OR</h3>
+              <div class="email-text col-lg-10">
+                <div class="row" style="height: 50px">
+
+                  <div class="blog-group inline-block">meet our team by emailing us at
+                    <!-- <div class="row"> -->
+                    <p class="email-link">hello@madetostrive.com</p> </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -173,51 +172,69 @@
 
     <!-- OUR APPROACH SECTION -->
     <div class="approach-container container">
-      <div class="row approach-container-row">
-        <div class="approach-left-header col-lg-4">
-          <a name="approach"></a>
-          <!-- <div class="row"> -->
-            <div class="approach-header col-lg-8 vcenter">
-               Our Approach
-                <span class="vertical-line" style="height: 150px"> </span>
+      <a name="approach"></a>
+      <div class="row container-row">
+        <!-- <div class="approach-left-header col-lg-4"> -->
+        <div class="left-section col-lg-4">
+          <div class="row">
+            <div class="left-header col-lg-8 ">
+              <h1 class="left-text">Our <br> Approach
+                <span class="vertical-line-process" style="height: 125px"></span>
+              </h1>
             </div>
-          <!-- </div> -->
+          </div>
         </div>
         <div class="approach-info col-lg-8">
           <div class="row">
             <div class="approach-quad col-lg-6">
               <!-- include icon -->
-              <span>
+              <div class="approach-info-title">
                 <span class="approach-info-icon glyphicon glyphicon-user"></span>
                 <span class="approach-info-header"> Student-Centered </span>
-              </span>
-              <div class="approach-info-caption"> This process is about you. We are here to guide you, but you will be in the driver's seat. </div>
+              </div>
+              <div class="approach-info-caption">
+                This process is about you. We <br>
+                are here to guide you, but you <br>
+                will be in the driver's seat.
+              </div>
             </div>
             <div class="approach-quad col-lg-6 offset-lg-1">
               <!-- include icon -->
-              <span>
+              <div class="approach-info-title">
                 <span class="approach-info-icon glyphicon glyphicon-star"> </span>
                 <span class="approach-info-header"> Data-Driven </span>
-              </span>
-              <div class="approach-info-caption"> Our advice is backed by research and conversations with admissions officers. </div>
+              </div>
+              <div class="approach-info-caption">
+                Our advice is backed by <br>
+                research and conversations <br>
+                with admissions officers.
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="approach-quad col-lg-6">
               <!-- include icon -->
-              <span>
+              <div class="approach-info-title">
                 <span class="approach-info-icon glyphicon glyphicon-align-center"> </span>
                 <span class="approach-info-header"> Comprehensive </span>
-              </span>
-              <div class="approach-info-caption"> No cap on hours. We'll work with you until you feel ready to hit submit. </div>
+              </div>
+              <div class="approach-info-caption">
+                No cap on hours. We'll work <br>
+                with you until you feel ready <br>
+                to hit submit.
+              </div>
             </div>
             <div class="approach-quad col-lg-6 offset-lg-1">
               <!-- include icon -->
-              <span>
+              <div class="approach-info-title">
                 <span class="approach-info-icon glyphicon glyphicon-signal"> </span>
                 <span class="approach-info-header"> Growth-Oriented </span>
-              </span>
-              <div class="approach-info-caption"> The college process is an inflection point and we push you to reflect ampersand grow from it. </div>
+              </div>
+              <div class="approach-info-caption">
+                The college process is an <br>
+                inflection point and we push <br>
+                you to reflect &amp; grow from it.
+              </div>
             </div>
           </div>
         </div>
@@ -225,18 +242,18 @@
     </div>
 
     <!-- COLLEGE PROCESS SECTION -->
-    <div class="process-container">
+    <div class="process-container container">
       <div class="row process-container-row">
-      <div class="process-section col-lg-4">
-        <a name="process"></a>
-        <div class="row">
-          <div class-"process-header col-lg-8">
-            <h1 class="process-text">College <br> Process
-            <span class="vertical-line-process" style="height: 125px"></span>
-          </h1>
+        <div class="left-section col-lg-4">
+          <a name="process"></a>
+          <div class="row">
+            <div class="left-header col-lg-8">
+              <h1 class="left-text">College <br> Process
+              <span class="vertical-line-process" style="height: 125px"></span>
+            </h1>
+            </div>
           </div>
         </div>
-      </div>
         <div class="process-content col-lg-3">
           <div class="row">
             <div class="category col-lg-12">
