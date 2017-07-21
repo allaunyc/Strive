@@ -237,6 +237,7 @@ hr {
 
 .process-content {
   text-align: right;
+  font-size: 18px;
 }
 
 .process-section {
@@ -251,6 +252,27 @@ hr {
   flex: 1;
 }
 
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+background-image: url("../assets/images/plus-circle.png");
+background-repeat: no-repeat !important;
+background-position: right;
+}
+
+input[type=radio]:hover + label {
+background-image: url("../assets/images/plus-circle-pinkred.png")
+}
+
+
+input[type=radio]:checked + label {
+background-image: url("../assets/images/check-circle.png")
+}
+
+/*
 .circlelogo-selection {
   background: url('../assets/images/plus-circle-pinkred.png');
   background-repeat: no-repeat !important;
@@ -259,7 +281,7 @@ hr {
 .circlelogo-selection img:hover {
   opacity: 0;
   background: url('../assets/images/plus-circle.png');
-}
+}*/
 
 /*#circlelogo-essays {
   background-image: url('../assets/images/plus-circle-pinkred.png');

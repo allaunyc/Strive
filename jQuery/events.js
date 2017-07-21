@@ -5,19 +5,11 @@ $(document).ready(function() {
     $(".submission-received").css("visibility", "visible");
   });
 
-var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo-recommendations img",
-"#circlelogo-interviews img", "#circlelogo-academics img", "#circlelogo-extracurriculars img",
-"#circlelogo-financial-aid img"];
+// var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo-recommendations img",
+// "#circlelogo-interviews img", "#circlelogo-academics img", "#circlelogo-extracurriculars img",
+// "#circlelogo-financial-aid img"];
 
-  $(".radio-icon-selection").click(function() {
-      // var self = this;
-      // $.each(icons, function(index, value) {
-      //   if (value === self) {
-      //     $(value).attr('src', '../assets/images/check-circle.png');
-      //   } else {
-      //     $(value).attr('src', '../assets/images/plus-circle.png');
-      //   }
-      // });
+  $("#a").click(function() {
 
       $("#college-selection-box").show();
       $(".triangle-left-selection").show();
@@ -36,7 +28,7 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $(".radio-icon-essays img").click(function() {
+  $("#b").click(function() {
     // $(this).attr("src", "../assets/images/check-circle.png");
 
       $("#essays-box").show();
@@ -56,7 +48,7 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $(".radio-icon-recommendations img").click(function() {
+  $("#c").click(function() {
     // $(this).attr("src", "../assets/images/check-circle.png");
       $("#recommendations-box").show();
       $(".triangle-left-recommendations").show();
@@ -75,7 +67,7 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $(".radio-icon-interviews img").click(function() {
+  $("#d").click(function() {
     // $(this).attr("src", "../assets/images/check-circle.png");
       $("#interviews-box").show();
       $(".triangle-left-interviews").show();
@@ -94,7 +86,7 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $(".radio-icon-academics img").click(function() {
+  $("#e").click(function() {
     // $(this).attr("src", "../assets/images/check-circle.png");
       $("#academics-box").show();
       $(".triangle-left-academics").show();
@@ -113,7 +105,7 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $(".radio-icon-extracurriculars img").click(function() {
+  $("#f").click(function() {
     // $(this).attr("src", "../assets/images/check-circle.png");
       $("#extracurriculars-box").show();
       $(".triangle-left-extracurriculars").show();
@@ -132,7 +124,7 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-financial-aid").hide();
   });
 
-  $(".radio-icon-financial-aid img").click(function() {
+  $("#g").click(function() {
     // $(this).attr("src", "../assets/images/check-circle.png");
     // $("input").attr("checked", true);
 
@@ -153,13 +145,28 @@ var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo
       $(".triangle-left-recommendations").hide();
     });
 
-    $("input").on('click', function() {
-         $(this).attr("checked", true);
-         console.log('Check if get here' )
-        $(this).siblings().attr("src", "../assets/images/check-circle.png");
-        // console.log($(".radio-icons").children().not(this));
-        $(".radio-icons").children().not($(this).siblings()).attr("src", "../assets/images/plus-circle.png");
-
-    })
+  //   $("img").on({
+  //    mouseenter: function () {
+  //      console.log("in mouse enter");
+  //      if(!$(this).attr("checked")){
+  //        $(this).attr("src", "../assets/images/plus-circle-pinkred.png");
+  //      }
+  //      // }
+  //    },
+  //    mouseleave: function () {
+  //      console.log("in mouse leave");
+  //      if(!$(this).attr("checked")){
+  //        $(this).attr("src", "../assets/images/plus-circle.png");
+  //      }
+  //    }
+  //  });
+   //
+  //   $("input").on('click', function() {
+  //        $(this).attr("checked", true);
+  //        console.log('Check if get here' )
+  //       $(this).siblings().attr("src", "../assets/images/check-circle.png");
+  //       // console.log($(".radio-icons").children().not(this));
+  //       $(".radio-icons").children().not($(this).siblings()).attr("src", "../assets/images/plus-circle.png");
+  //   })
 
 });

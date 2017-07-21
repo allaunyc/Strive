@@ -4,41 +4,41 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-    label > input{ /* HIDE RADIO */
-      visibility: hidden; /* Makes input not-clickable */
-      position: absolute; /* Remove input from document flow */
-    }
-    label > input + img:hover{ /* IMAGE STYLES */
-      cursor:pointer;
-      border:2px solid transparent;
+    input[type=radio] {
+      display: none;
+  }
+
+  input {
+    margin-left: 60px;
+  }
+
+  input[type=radio] + label  {
+  background-image: url("./assets/images/plus-circle.png");
+  background-repeat: no-repeat !important;
+  background-position: right;
+
 }
-label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-    border:2px solid #f00;
+
+input[type=radio]:hover + label {
+  background-image: url("./assets/images/plus-circle-pinkred.png")
+}
+
+
+input[type=radio]:checked + label {
+  background-image: url("./assets/images/check-circle.png")
 }
     </style>
   </head>
   <body>
     <form>
-    <label>
-      <input type="radio" name="fb" value="small" />
-      <img src="./assets/images/plus-circle.png">
-    </label>
-
-    <label>
-      <input type="radio" name="fb" value="small" />
-      <img src="./assets/images/plus-circle.png">
-    </label>
-
-    <label>
-      <input type="radio" name="fb" value="small" />
-      <img src="./assets/images/plus-circle.png">
-    </label>
-
-    <label>
-      <input type="radio" name="fb" value="small" />
-      <img src="./assets/images/plus-circle.png">
-    </label>
-  </form>
+  <div><input type="radio" name="test" id="a"><label for="a">College Selection</label>
+  <div><input type="radio" name="test" id="b"><label for="b">Essays</label></div>
+  <div><input type="radio" name="test" id="c"><label for="c">Recommendations</label></div>
+  <div><input type="radio" name="test" id="d"><label for="d">Interviews</label></div>
+  <div><input type="radio" name="test" id="e"><label for="e">Academics</label></div>
+  <div><input type="radio" name="test" id="f"><label for="f">Extracurriculars</label></div>
+  <div><input type="radio" name="test" id="g"><label for="g">Financial Aid</label></div>
+</form>
 
   </body>
 </html>
