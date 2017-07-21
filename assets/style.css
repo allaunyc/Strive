@@ -253,7 +253,6 @@ input[type=radio]:checked + label {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(18px, -55px);
     flex: 1;
 }
 
@@ -281,7 +280,6 @@ input[type=radio]:checked + label {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -306,7 +304,6 @@ input[type=radio]:checked + label {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -331,7 +328,6 @@ input[type=radio]:checked + label {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -356,7 +352,6 @@ input[type=radio]:checked + label {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -381,7 +376,6 @@ input[type=radio]:checked + label {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -406,7 +400,6 @@ input[type=radio]:checked + label {
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
