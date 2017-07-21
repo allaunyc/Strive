@@ -48,26 +48,15 @@ line-height: 80px;
 .navbar-btn {
  border-radius: 3;
  background-color: #283C52 ;
+ border-color: #283C52 ;
  line-height: 30px;
- padding: 10px 20px 5px 20px;
+ padding: 5px 20px 5px 20px;
  text-align: center;
 }
 .container-fluid{
   padding: 0;
   margin:0;
 }
-
-/*#about {
-  text-decoration: none;
-}
-
-#approach {
-  text-decoration: none;
-}
-
-#process {
-  text-decoration: none;
-}*/
 
 /*LEARN CONTAINER*/
 .row {
@@ -93,6 +82,7 @@ line-height: 80px;
 }
 .learn-more-btn {
  background-color: #283C52 ;
+ border-color: #283C52;
 }
 .form-row {
   padding: 5px;
@@ -105,23 +95,11 @@ line-height: 80px;
   visibility: hidden;
   font-size: 18px;
 }
-hr {
-   display: block;
-   position: relative;
-   padding: 0;
-   margin: 8px auto;
-   height: 0;
-   width: 100%;
-   max-height: 0;
-   font-size: 1px;
-   line-height: 0;
-   clear: both;
-   border: none;
-   border-top: 1px solid #EA4750;
-   border-bottom: 1px solid #EA4750;
-}
+
 .submission-text {
   text-align: center;
+  font-size: 16px;
+  border-bottom: 2px solid #EA4750;
 }
 
 /*ABOUT CONTAINER*/
@@ -138,14 +116,6 @@ hr {
   height: 500px;
   background-color: white;
 }
-/*
-.vertical-line {
-  width: 1px;
-  background-color:#EA4750;
-  float: right;
-  height: 100%;
-  transform: translate(-140px, -55px);
-}*/
 
 .left-text {
   transform: translate(170px, 60px);
@@ -219,14 +189,6 @@ hr {
   /*padding: 2em;*/
 }
 
-
-
-/*.process-text {
-  transform: translate(170px, 60px);
-  font-weight: normal;
-  font-family: avenirHeavy;
-}*/
-
 .vertical-line-process {
   width: 2px;
   background-color:#EA4750;
@@ -272,77 +234,6 @@ input[type=radio]:checked + label {
   background-image: url("../assets/images/check-circle.png")
 }
 
-/*
-.circlelogo-selection {
-  background: url('../assets/images/plus-circle-pinkred.png');
-  background-repeat: no-repeat !important;
-}
-
-.circlelogo-selection img:hover {
-  opacity: 0;
-  background: url('../assets/images/plus-circle.png');
-}*/
-
-/*#circlelogo-essays {
-  background-image: url('../assets/images/plus-circle-pinkred.png');
-  background-repeat: no-repeat !important;
-}
-
-#circlelogo-essays img:hover {
-  opacity: 0;
-  background-image: url('../assets/images/plus-circle.png');
-}*/
-
-/*#circlelogo-recommendations {
-  background: url('../assets/images/plus-circle-pinkred.png');
-  background-repeat: no-repeat !important;
-}
-
-#circlelogo-recommendations img:hover {
-  opacity: 0;
-  background: url('../assets/images/plus-circle.png');
-}*/
-
-/*#circlelogo-interviews {
-  background: url('../assets/images/plus-circle-pinkred.png');
-  background-repeat: no-repeat !important;
-}*/
-
-/*#circlelogo-interviews img:hover {
-  opacity: 0;
-  background: url('../assets/images/plus-circle.png');
-}*/
-
-/*#circlelogo-academics {
-  background: url('../assets/images/plus-circle-pinkred.png');
-  background-repeat: no-repeat !important;
-}
-
-#circlelogo-academics img:hover {
-  opacity: 0;
-  background: url('../assets/images/plus-circle.png');
-}
-
-#circlelogo-extracurriculars {
-  background: url('../assets/images/plus-circle-pinkred.png');
-  background-repeat: no-repeat !important;
-}
-
-#circlelogo-extracurriculars img:hover {
-  opacity: 0;
-  background: url('../assets/images/plus-circle.png');
-}
-
-#circlelogo-financial-aid {
-  background: url('../assets/images/plus-circle-pinkred.png');
-  background-repeat: no-repeat !important;
-}
-
-#circlelogo-financial-aid img:hover {
-  opacity: 0;
-  background: url('../assets/images/plus-circle.png');
-}*/
-
 .box-description {
   font-family: avenirHeavy;
   font-size: 14px;
@@ -375,13 +266,6 @@ input[type=radio]:checked + label {
     float:left;
     transform: translateY(-3px);
 }
-
-/*.process-container-row{
-  padding: 60px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}*/
 
 .process-container {
   height: 500px;
@@ -600,13 +484,6 @@ input[type=radio]:checked + label {
 .approach-icons{
   transform: translateY(-20px);
 }
-/*.vertical-line {
-  width: 1px;
-  background-color:#EA4750;
-  float:right;
-  height:100%;
-  transform: translate(0, -70px);
-}*/
 
 /*FOOTER STYLING*/
 footer {
@@ -673,7 +550,7 @@ footer img{
 }
 
 .mail-logo {
-  background: url('../assets/images/mail-pinkred.png');
+  background-image: url('../assets/images/mail-pinkred.png');
   background-repeat: no-repeat !important;
   background-position: 10px 0px;
 }
@@ -684,10 +561,3 @@ footer img{
 footer li {
   display: inline-block;
 }
-/*.fb-logo {
-  background-image: url('../assets/images/facebookpink.png');
-}
-
-.fb-logo img:hover {
-    display:none;
-}*/

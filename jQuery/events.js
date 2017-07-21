@@ -5,10 +5,6 @@ $(document).ready(function() {
     $(".submission-received").css("visibility", "visible");
   });
 
-// var icons = [".circlelogo-selection img", "#circlelogo-essays img", "#circlelogo-recommendations img",
-// "#circlelogo-interviews img", "#circlelogo-academics img", "#circlelogo-extracurriculars img",
-// "#circlelogo-financial-aid img"];
-
   $("#a").click(function() {
 
       $("#college-selection-box").show();
@@ -29,7 +25,6 @@ $(document).ready(function() {
   });
 
   $("#b").click(function() {
-    // $(this).attr("src", "../assets/images/check-circle.png");
 
       $("#essays-box").show();
       $(".triangle-left-essays").show();
@@ -49,7 +44,6 @@ $(document).ready(function() {
   });
 
   $("#c").click(function() {
-    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#recommendations-box").show();
       $(".triangle-left-recommendations").show();
 
@@ -68,7 +62,6 @@ $(document).ready(function() {
   });
 
   $("#d").click(function() {
-    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#interviews-box").show();
       $(".triangle-left-interviews").show();
 
@@ -87,7 +80,6 @@ $(document).ready(function() {
   });
 
   $("#e").click(function() {
-    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#academics-box").show();
       $(".triangle-left-academics").show();
 
@@ -106,7 +98,6 @@ $(document).ready(function() {
   });
 
   $("#f").click(function() {
-    // $(this).attr("src", "../assets/images/check-circle.png");
       $("#extracurriculars-box").show();
       $(".triangle-left-extracurriculars").show();
 
@@ -125,8 +116,6 @@ $(document).ready(function() {
   });
 
   $("#g").click(function() {
-    // $(this).attr("src", "../assets/images/check-circle.png");
-    // $("input").attr("checked", true);
 
       $("#financial-aid-box").show();
       $(".triangle-left-financial-aid").show();
@@ -144,29 +133,5 @@ $(document).ready(function() {
       $("#recommendations-box").hide();
       $(".triangle-left-recommendations").hide();
     });
-
-  //   $("img").on({
-  //    mouseenter: function () {
-  //      console.log("in mouse enter");
-  //      if(!$(this).attr("checked")){
-  //        $(this).attr("src", "../assets/images/plus-circle-pinkred.png");
-  //      }
-  //      // }
-  //    },
-  //    mouseleave: function () {
-  //      console.log("in mouse leave");
-  //      if(!$(this).attr("checked")){
-  //        $(this).attr("src", "../assets/images/plus-circle.png");
-  //      }
-  //    }
-  //  });
-   //
-  //   $("input").on('click', function() {
-  //        $(this).attr("checked", true);
-  //        console.log('Check if get here' )
-  //       $(this).siblings().attr("src", "../assets/images/check-circle.png");
-  //       // console.log($(".radio-icons").children().not(this));
-  //       $(".radio-icons").children().not($(this).siblings()).attr("src", "../assets/images/plus-circle.png");
-  //   })
 
 });
