@@ -258,18 +258,18 @@ input[type=radio] {
 }
 
 input[type=radio] + label {
-background-image: url("../assets/images/plus-circle.png");
-background-repeat: no-repeat !important;
-background-position: right;
+  background-image: url("../assets/images/plus-circle.png");
+  background-repeat: no-repeat !important;
+  background-position: right;
+  padding-right: 30px;
 }
 
 input[type=radio]:hover + label {
-background-image: url("../assets/images/plus-circle-pinkred.png")
+  background-image: url("../assets/images/plus-circle-pinkred.png")
 }
 
-
 input[type=radio]:checked + label {
-background-image: url("../assets/images/check-circle.png")
+  background-image: url("../assets/images/check-circle.png")
 }
 
 /*
@@ -362,7 +362,7 @@ background-image: url("../assets/images/check-circle.png")
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(0px, -18px);
+    transform: translate(18px, -55px);
     flex: 1;
 }
 
@@ -397,7 +397,7 @@ background-image: url("../assets/images/check-circle.png")
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(0px, -18px);
+    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -409,7 +409,7 @@ background-image: url("../assets/images/check-circle.png")
     border-right: 18px solid #F6F6F6;
     border-bottom: 18px solid transparent;
     float:left;
-    transform: translateY(55px);
+    transform: translateY(50px);
     display: none;
 }
 
@@ -422,7 +422,7 @@ background-image: url("../assets/images/check-circle.png")
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(0px, -18px);
+    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -434,7 +434,7 @@ background-image: url("../assets/images/check-circle.png")
     border-right: 18px solid #F6F6F6;
     border-bottom: 18px solid transparent;
     float:left;
-    transform: translateY(114px);
+    transform: translateY(109px);
     display: none;
 }
 
@@ -447,7 +447,7 @@ background-image: url("../assets/images/check-circle.png")
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(0px, -18px);
+    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -459,7 +459,7 @@ background-image: url("../assets/images/check-circle.png")
     border-right: 18px solid #F6F6F6;
     border-bottom: 18px solid transparent;
     float:left;
-    transform: translateY(172px);
+    transform: translateY(167px);
     display: none;
 }
 
@@ -472,7 +472,7 @@ background-image: url("../assets/images/check-circle.png")
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(0px, -18px);
+    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -484,7 +484,7 @@ background-image: url("../assets/images/check-circle.png")
     border-right: 18px solid #F6F6F6;
     border-bottom: 18px solid transparent;
     float:left;
-    transform: translateY(233px);
+    transform: translateY(223px);
     display: none;
 }
 
@@ -497,7 +497,7 @@ background-image: url("../assets/images/check-circle.png")
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(0px, -18px);
+    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -509,7 +509,7 @@ background-image: url("../assets/images/check-circle.png")
     border-right: 18px solid #F6F6F6;
     border-bottom: 18px solid transparent;
     float:left;
-    transform: translateY(295px);
+    transform: translateY(275px);
     display: none;
 }
 
@@ -522,7 +522,7 @@ background-image: url("../assets/images/check-circle.png")
     border-style: solid #F6F6F6;
     border-top-color: #F6F6F6;
     font-family: avenirHeavy;
-    transform: translate(0px, -18px);
+    transform: translate(18px, -55px);
     display: none;
     flex: 1;
 }
@@ -534,7 +534,7 @@ background-image: url("../assets/images/check-circle.png")
     border-right: 18px solid #F6F6F6;
     border-bottom: 18px solid transparent;
     float:left;
-    transform: translateY(340px);
+    transform: translateY(330px);
     display: none;
 }
 

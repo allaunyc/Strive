@@ -16,8 +16,25 @@
   background-image: url("./assets/images/plus-circle.png");
   background-repeat: no-repeat !important;
   background-position: right;
+  padding-right: 30px;
 
 }
+
+ /*#a + label  {
+background-image: url("./assets/images/check-circle.png");
+background-repeat: no-repeat !important;
+background-position: right;
+padding-right: 30px;
+
+}*/
+
+/*#a:checked + label {
+  background-image: url("./assets/images/plus-circle.png")
+}*/
+
+/*#a:hover + label {
+  background-image: url("./assets/images/plus-circle-pinkred.png")
+}*/
 
 input[type=radio]:hover + label {
   background-image: url("./assets/images/plus-circle-pinkred.png")
@@ -31,7 +48,7 @@ input[type=radio]:checked + label {
   </head>
   <body>
     <form>
-  <div><input type="radio" name="test" id="a"><label for="a">College Selection</label>
+  <div><input type="radio" name="test" id="a" checked><label for="a">College Selection</label>
   <div><input type="radio" name="test" id="b"><label for="b">Essays</label></div>
   <div><input type="radio" name="test" id="c"><label for="c">Recommendations</label></div>
   <div><input type="radio" name="test" id="d"><label for="d">Interviews</label></div>
