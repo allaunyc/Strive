@@ -192,7 +192,6 @@ line-height: 80px;
 
 .footer-item {
   height: 50px;
-
 }
 
 .inline-block {
@@ -713,22 +712,68 @@ footer li {
   }
 
   .about-container {
-    height: 1000px;
-  }
-  .learn-container {
     height: 800px;
-  }
-  .approach-container {
-    height: 1400px;
   }
 
   .left-text {
     font-weight: normal;
     font-family: avenirHeavy;
-    font-size: 48px;
+    font-size: 36px;
     border-bottom: solid 2px #EA4750;
     border-right: none;
-    width:350px;
+    width:250px;
+    text-align: center;
+    /*line-height: 10px;*/
+    margin-bottom: 50px;
+    transform: translateX(-30px);
   }
+
+  /*#left-text-about {
+    transform: translateX(90px, -15px);
+  }*/
+
+  .learn-container {
+    height: 800px;
+  }
+  .approach-container {
+    height: 1100px;
+  }
+
+  .box-formatting {
+    transform: translate(-30px ,-15px);
+  }
+
+  .triangle-left-selection {
+    opacity:0;
+  }
+
+  .triangle-left-essays {
+    opacity:0;
+  }
+
+  .triangle-left-recommendations {
+    opacity:0;
+  }
+
+  .triangle-left-interviews {
+    opacity:0;
+  }
+
+  .triangle-left-academics {
+    opacity:0;
+  }
+
+  .triangle-left-extracurriculars {
+    opacity:0;
+  }
+
+  .triangle-left-financial-aid {
+    opacity:0;
+  }
+
+  .footer-item {
+    transform: translateX(-65px);
+  }
+
 
 }
