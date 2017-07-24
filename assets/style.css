@@ -35,7 +35,7 @@ nav {
   background-color: white;
 }
 .navbar-nav {
-  width: 1400px;
+  width: 1300px;
   background-color: white;
   height: 80px;
 }
@@ -117,7 +117,7 @@ nav {
 }
 .learn-more-btn {
  background-color: #283C52 ;
- border-color: #283C52;
+ /*border-color: #283C52;*/
 }
 
 .form-row {
@@ -473,7 +473,7 @@ input[type=radio]:checked + label {
 }
 .learn-more-btn:hover {
   background-color: #EA4750;
-  border-color: #EA4750;
+  /*border-color: #EA4750;*/
 }
 .input-field {
   line-height: 40px;
@@ -655,6 +655,14 @@ footer li {
     width: 10%;
     padding-right: 50px;
     padding-left: 70px;
+}
+
+@-moz-document url-prefix() {
+  h3.blog-group.col-lg-8.offset-lg-5.footer-item {
+  width: 10%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 }
 
   .learn-container {
