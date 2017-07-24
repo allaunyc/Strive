@@ -811,36 +811,24 @@ footer li {
       transform: translate(-120px, -30px);
     }
 
-  .box-formatting {
-    transform: translate(-30px ,-15px);
+  .accordion {
+    transform: translateY(-100px);
   }
 
-  .triangle-left-selection {
-    opacity:0;
+  .ui-accordion .ui-accordion-header {
+    color: white;
+    background: #283C52;
+    border-radius: 5px;
+    font-family: avenirHeavy;
   }
 
-  .triangle-left-essays {
-    opacity:0;
+  .ui-accordion .ui-accordion-content {
+    background-color: #F6F6F6;
+    border-radius: 5px;
   }
 
-  .triangle-left-recommendations {
-    opacity:0;
-  }
-
-  .triangle-left-interviews {
-    opacity:0;
-  }
-
-  .triangle-left-academics {
-    opacity:0;
-  }
-
-  .triangle-left-extracurriculars {
-    opacity:0;
-  }
-
-  .triangle-left-financial-aid {
-    opacity:0;
+  .ui-accordion-header-icon.ui-icon-triangle-1-e {
+    color: white;
   }
 
   .footer-item {
@@ -848,7 +836,7 @@ footer li {
   }
 
   .process-container {
-    height: 1000px;
+    height: 350px;
   }
 
   .footer-container {
