@@ -214,7 +214,6 @@ nav {
 
 .footer-item {
   height: 50px;
-
 }
 h3.blog-group.col-lg-8.offset-lg-5.footer-item{
   width: 10%;
@@ -684,6 +683,10 @@ footer li {
     margin-top: 100px;
   }
 
+  h3 {
+    margin-left: 50px;
+  }
+
   .left-text {
     font-weight: normal;
     font-family: avenirHeavy;
@@ -764,10 +767,17 @@ footer li {
  #nav-item-process {
   transform: translateX(-60px);
  }
+
   .navbar-nav .nav-item {
     line-height: 24px;
     padding-top: 13px;
     font-size: 14px;
+  }
+
+  .navbar-btn {
+  transform: translateX(-40px);
+  padding-left: 10px;
+  padding-right: 10px;
   }
   .navbar-btn {
     transform: translate(175px, -70px);
@@ -794,6 +804,7 @@ footer li {
   .about-container .left-header {
     transform: translate(-115px, -70px);
   }
+
   #left-text-about {
     margin-bottom: 10px;
   }
@@ -811,15 +822,19 @@ footer li {
   #left-text-approach {
     margin-bottom: 30px;
   }
+
   .approach-info-caption {
     font-size: 17px;
   }
+
   .approach-quad {
     padding: 30px;
   }
+
   h3 {
     margin-left: 0px;
   }
+
   .learn-container {
     height: 800px;
   }
