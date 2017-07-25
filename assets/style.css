@@ -30,7 +30,7 @@ nav {
   background-color: white;
 }
 .navbar-nav {
-  width: 1300px;
+  width: 1400px;
   background-color: white;
   height: 80px;
 }
@@ -80,7 +80,7 @@ nav {
  line-height: 30px;
  padding: 5px 20px 5px 20px;
  text-align: center;
-  font-size: 20px;
+ font-size: 20px;
 }
 .container-fluid{
   padding: 0;
@@ -112,7 +112,7 @@ nav {
 }
 .learn-more-btn {
  background-color: #283C52 ;
- /*border-color: #283C52;*/
+ border-color: #283C52;
 }
 
 .form-row {
@@ -265,11 +265,12 @@ input[type=radio] + label {
   background-repeat: no-repeat !important;
   background-position: right;
   padding-right: 30px;
+
 }
 
-input[type=radio]:hover + label {
+input[type=radio]:hover + label:hover {
   background-image: url("../assets/images/plus-circle-pinkred.png");
-  /*-webkit-background-image: url("../assets/images/plus-circle-pinkred.png");*/
+  -webkit-background-image: url("../assets/images/plus-circle-pinkred.png");
 }
 
 input[type=radio]:checked + label {
@@ -469,7 +470,7 @@ input[type=radio]:checked + label {
 }
 .learn-more-btn:hover {
   background-color: #EA4750;
-  /*border-color: #EA4750;*/
+  border-color: #EA4750;
 }
 .input-field {
   line-height: 40px;
@@ -611,6 +612,7 @@ footer li {
 }
 
 @media (max-width: 768px) {
+
   .navbar-collapse.collapse {
    display: block!important;
    height: auto!important;
@@ -623,6 +625,7 @@ footer li {
   width: 768px;
   background-color: white;
   height: 80px;
+  -webkit-height: 50px;
 }
 .nav.navbar-nav {
     width: 768px;
@@ -658,14 +661,6 @@ footer li {
     width: 10%;
     padding-right: 50px;
     padding-left: 40px;
-}
-
-@-moz-document url-prefix() {
-  h3.blog-group.col-lg-8.offset-lg-5.footer-item {
-  width: 10%;
-  padding-right: 50px;
-  padding-left: 50px;
-}
 }
 
   .learn-container {
@@ -762,12 +757,14 @@ footer li {
  }
  .navbar-brand img {
    width: 80px;
+   -webkit-width:30px;
  }
  .nav.navbar-nav {
     width: 414px;
   }
  .navbar-brand {
    padding-left: 10px;
+
  }
  #nav-item-about {
    transform: translateX(-40px);
@@ -785,11 +782,11 @@ footer li {
     font-size: 14px;
   }
 
-  .navbar-btn {
+  /*.navbar-btn {
   transform: translateX(-40px);
   padding-left: 10px;
   padding-right: 10px;
-  }
+  }*/
   .navbar-btn {
     transform: translate(175px, -70px);
   padding-left: 10px;
@@ -808,6 +805,7 @@ footer li {
   }
   .email-link {
     font-size: 15px;
+    -webkit-font-size: 12px;
   }
   .left-header {
     transform: translate(-115px, -30px);
@@ -880,10 +878,15 @@ footer li {
   .footer-item {
     transform: translateX(-30px);
   }
+  /*input.btn.btn-secondary.footer-item{
+    -webkit-width:5px;
+  }*/
+
   h3.blog-group.col-lg-8.offset-lg-5.footer-item{
     width: 10%;
     padding-right: 20px;
     padding-left: 20px;
+    -webkit-font-size: 12px;
   }
   .process-container {
     height: 350px;
