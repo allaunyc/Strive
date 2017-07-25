@@ -88,8 +88,11 @@ $(window).bind('enterBreakpoint414', function() {
 
     $(".process-content").hide();
     $(".imaginary-column").hide();
-
+    // $(".process-content").css("display", "none");
+    // $(".imaginary-column").css("display", "none");
+    //
     $(".accordion").show();
+    // $(".accordion").css("display", "block");
 
   });
 
@@ -102,9 +105,11 @@ $(window).bind('enterBreakpoint768', function() {
 
     $(".process-content").show();
     $(".imaginary-column").show();
-
+    // $(".process-content").css("display", "block");
+    // $(".imaginary-column").css("display", "block");
+    //
     $(".accordion").hide();
-
+    // $(".accordion").css("display", "none");
   });
 
 $(window).bind('enterBreakpoint1200',function() {
@@ -116,11 +121,16 @@ $(window).bind('enterBreakpoint1200',function() {
 
   $(".process-content").show();
   $(".imaginary-column").show();
+  // $(".process-content").css("display", "block");
+  // $(".imaginary-column").css("display", "block");
+
 
   $("#a").click(function() {
 
       $("#college-selection-box").show();
       $(".triangle-left-selection").show();
+      // $("#college-selection-box").css("display", "block");
+      // $(".triangle-left-selection").css("display", "block");
 
       $("#recommendations-box").hide();
       $(".triangle-left-recommendations").hide();
@@ -134,12 +144,26 @@ $(window).bind('enterBreakpoint1200',function() {
       $(".triangle-left-extracurriculars").hide();
       $("#financial-aid-box").hide();
       $(".triangle-left-financial-aid").hide();
+      // $("#recommendations-box").css("display", "none");
+      // $(".triangle-left-recommendations").css("display", "none");
+      // $("#essays-box").css("display", "none");
+      // $(".triangle-left-essays").css("display", "none");
+      // $("#interviews-box").css("display", "none");
+      // $(".triangle-left-interviews").css("display", "none");
+      // $("#academics-box").css("display", "none");
+      // $(".triangle-left-academics").css("display", "none");
+      // $("#extracurriculars-box").css("display", "none");
+      // $(".triangle-left-extracurriculars").css("display", "none");
+      // $("#financial-aid-box").css("display", "none");
+      // $(".triangle-left-financial-aid").css("display", "none");
   });
 
   $("#b").click(function() {
 
       $("#essays-box").show();
       $(".triangle-left-essays").show();
+      // $("#essays-box").css("display", "block");
+      // $(".triangle-left-essays").css("display", "block");
 
       $("#college-selection-box").hide();
       $(".triangle-left-selection").hide();
@@ -153,11 +177,25 @@ $(window).bind('enterBreakpoint1200',function() {
       $(".triangle-left-extracurriculars").hide();
       $("#financial-aid-box").hide();
       $(".triangle-left-financial-aid").hide();
+      // $("#recommendations-box").css("display", "none");
+      // $(".triangle-left-recommendations").css("display", "none");
+      // $("#college-selection-box").css("display", "none");
+      // $(".triangle-left-selection").css("display", "none");
+      // $("#interviews-box").css("display", "none");
+      // $(".triangle-left-interviews").css("display", "none");
+      // $("#academics-box").css("display", "none");
+      // $(".triangle-left-academics").css("display", "none");
+      // $("#extracurriculars-box").css("display", "none");
+      // $(".triangle-left-extracurriculars").css("display", "none");
+      // $("#financial-aid-box").css("display", "none");
+      // $(".triangle-left-financial-aid").css("display", "none");
   });
 
   $("#c").click(function() {
       $("#recommendations-box").show();
       $(".triangle-left-recommendations").show();
+      // $("#recommendations-box").css("display", "block");
+      // $(".triangle-left-recommendations").css("display", "block");
 
       $("#college-selection-box").hide();
       $(".triangle-left-selection").hide();
@@ -171,11 +209,25 @@ $(window).bind('enterBreakpoint1200',function() {
       $(".triangle-left-extracurriculars").hide();
       $("#financial-aid-box").hide();
       $(".triangle-left-financial-aid").hide();
+      // $("#essays-box").css("display", "none");
+      // $(".triangle-left-essays").css("display", "none");
+      // $("#college-selection-box").css("display", "none");
+      // $(".triangle-left-selection").css("display", "none");
+      // $("#interviews-box").css("display", "none");
+      // $(".triangle-left-interviews").css("display", "none");
+      // $("#academics-box").css("display", "none");
+      // $(".triangle-left-academics").css("display", "none");
+      // $("#extracurriculars-box").css("display", "none");
+      // $(".triangle-left-extracurriculars").css("display", "none");
+      // $("#financial-aid-box").css("display", "none");
+      // $(".triangle-left-financial-aid").css("display", "none");
   });
 
   $("#d").click(function() {
       $("#interviews-box").show();
       $(".triangle-left-interviews").show();
+      // $("#interviews-box").css("display", "block");
+      // $(".triangle-left-interviews").css("display", "block");
 
       $("#college-selection-box").hide();
       $(".triangle-left-selection").hide();
@@ -189,11 +241,25 @@ $(window).bind('enterBreakpoint1200',function() {
       $(".triangle-left-extracurriculars").hide();
       $("#financial-aid-box").hide();
       $(".triangle-left-financial-aid").hide();
+      // $("#essays-box").css("display", "none");
+      // $(".triangle-left-essays").css("display", "none");
+      // $("#college-selection-box").css("display", "none");
+      // $(".triangle-left-selection").css("display", "none");
+      // $("#recommendations-box").css("display", "none");
+      // $(".triangle-left-recommendations").css("display", "none");
+      // $("#academics-box").css("display", "none");
+      // $(".triangle-left-academics").css("display", "none");
+      // $("#extracurriculars-box").css("display", "none");
+      // $(".triangle-left-extracurriculars").css("display", "none");
+      // $("#financial-aid-box").css("display", "none");
+      // $(".triangle-left-financial-aid").css("display", "none");
   });
 
   $("#e").click(function() {
       $("#academics-box").show();
       $(".triangle-left-academics").show();
+      // $("#academics-box").css("display", "block");
+      // $(".triangle-left-academics").css("display", "block");
 
       $("#college-selection-box").hide();
       $(".triangle-left-selection").hide();
@@ -207,11 +273,25 @@ $(window).bind('enterBreakpoint1200',function() {
       $(".triangle-left-extracurriculars").hide();
       $("#financial-aid-box").hide();
       $(".triangle-left-financial-aid").hide();
+      // $("#essays-box").css("display", "none");
+      // $(".triangle-left-essays").css("display", "none");
+      // $("#college-selection-box").css("display", "none");
+      // $(".triangle-left-selection").css("display", "none");
+      // $("#interviews-box").css("display", "none");
+      // $(".triangle-left-interviews").css("display", "none");
+      // $("#academics-box").css("display", "none");
+      // $(".triangle-left-academics").css("display", "none");
+      // $("#extracurriculars-box").css("display", "none");
+      // $(".triangle-left-extracurriculars").css("display", "none");
+      // $("#financial-aid-box").css("display", "none");
+      // $(".triangle-left-financial-aid").css("display", "none");
   });
 
   $("#f").click(function() {
       $("#extracurriculars-box").show();
       $(".triangle-left-extracurriculars").show();
+      // $("#extracurriculars-box").css("display", "block");
+      // $(".triangle-left-extracurriculars").css("display", "block");
 
       $("#college-selection-box").hide();
       $(".triangle-left-selection").hide();
@@ -225,12 +305,26 @@ $(window).bind('enterBreakpoint1200',function() {
       $(".triangle-left-recommendations").hide();
       $("#financial-aid-box").hide();
       $(".triangle-left-financial-aid").hide();
+      // $("#essays-box").css("display", "none");
+      // $(".triangle-left-essays").css("display", "none");
+      // $("#college-selection-box").css("display", "none");
+      // $(".triangle-left-selection").css("display", "none");
+      // $("#interviews-box").css("display", "none");
+      // $(".triangle-left-interviews").css("display", "none");
+      // $("#academics-box").css("display", "none");
+      // $(".triangle-left-academics").css("display", "none");
+      // $("#recommendations-box").css("display", "none");
+      // $(".triangle-left-recommendations").css("display", "none");
+      // $("#financial-aid-box").css("display", "none");
+      // $(".triangle-left-financial-aid").css("display", "none");
   });
 
   $("#g").click(function() {
 
       $("#financial-aid-box").show();
       $(".triangle-left-financial-aid").show();
+      // $("#financial-aid-box").css("display", "block");
+      // $(".triangle-left-financial-aid").css("display", "block");
 
       $("#college-selection-box").hide();
       $(".triangle-left-selection").hide();
@@ -244,6 +338,18 @@ $(window).bind('enterBreakpoint1200',function() {
       $(".triangle-left-extracurriculars").hide();
       $("#recommendations-box").hide();
       $(".triangle-left-recommendations").hide();
+      // $("#essays-box").css("display", "none");
+      // $(".triangle-left-essays").css("display", "none");
+      // $("#college-selection-box").css("display", "none");
+      // $(".triangle-left-selection").css("display", "none");
+      // $("#interviews-box").css("display", "none");
+      // $(".triangle-left-interviews").css("display", "none");
+      // $("#academics-box").css("display", "none");
+      // $(".triangle-left-academics").css("display", "none");
+      // $("#extracurriculars-box").css("display", "none");
+      // $(".triangle-left-extracurriculars").css("display", "none");
+      // $("#financial-aid-box").css("display", "none");
+      // $(".triangle-left-financial-aid").css("display", "none");
     });
 
     $(".accordion").hide();
