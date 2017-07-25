@@ -1,3 +1,43 @@
+$(function() {
+  $('#learn-more-form').submit(function(event) {
+    event.preventDefault();
+
+    var subscribeForm = $(this);
+    var subscribeButton = $('input[type=submit]', subscribeForm);
+
+    if ($("input[name='name-input']").val() === '') {
+      alert('Please enter your name.')
+      return
+    }
+    if ($("input[name='email-input']").val() === '') {
+      alert('Please enter your email address.')
+      return
+    }
+
+    $.ajax({
+      url: subscribeForm.prop('action'),
+      type: 'POST',
+      crossDomain: true,
+      headers : {
+        'accept' : 'application/javascript',
+      },
+      data: $('#learn-more-form').serialize(),
+      beforeSend: function() {
+        subscribeButton.prop('disabled', 'disabled');
+      }
+    })
+    .done(function(response) {
+      subscribeButton.prop('disabled', false);
+    })
+    .fail(function(response) {
+      alert('Was not able to send your information');
+      subscribeButton.prop('disabled', false);
+    })
+
+  });
+});
+
+
 (function($) {
 
 	var lastSize = 0;

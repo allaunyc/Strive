@@ -7,15 +7,15 @@ body {
 /* FONTS */
 @font-face {
    font-family: avenirBook;
-   src: url(../assets/fonts/avenirbook.ttf);
+   src: url(/skeleton/avenirbook.ttf);
 }
 @font-face {
    font-family: avenirMedium;
-   src: url(../assets/fonts/avenirMedium.ttf);
+   src: url(/skeleton/avenirMedium.ttf);
 }
 @font-face {
    font-family: avenirHeavy;
-   src: url(../assets/fonts/avenir-heavy-new.otf);
+   src: url(/skeleton/avenir-heavy-new.otf);
 }
 
 /*NAV BAR*/
@@ -270,10 +270,12 @@ input[type=radio] + label {
   background-repeat: no-repeat !important;
   background-position: right;
   padding-right: 30px;
+
 }
 
-input[type=radio]:hover + label {
-  background-image: url("../assets/images/plus-circle-pinkred.png")
+input[type=radio]:hover + label:hover {
+  background-image: url("../assets/images/plus-circle-pinkred.png");
+  -webkit-background-image: url("../assets/images/plus-circle-pinkred.png");
 }
 
 input[type=radio]:checked + label {
@@ -608,6 +610,7 @@ footer li {
 
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
+
   .navbar-collapse.collapse {
    display: block!important;
    height: auto!important;
@@ -620,6 +623,7 @@ footer li {
   width: 768px;
   background-color: white;
   height: 80px;
+  -webkit-height: 50px;
 }
 .nav.navbar-nav {
     width: 768px;
@@ -751,12 +755,14 @@ footer li {
  }
  .navbar-brand img {
    width: 80px;
+   -webkit-width:30px;
  }
  .nav.navbar-nav {
     width: 414px;
   }
  .navbar-brand {
    padding-left: 10px;
+
  }
  #nav-item-about {
    transform: translateX(-40px);
@@ -774,11 +780,11 @@ footer li {
     font-size: 14px;
   }
 
-  .navbar-btn {
+  /*.navbar-btn {
   transform: translateX(-40px);
   padding-left: 10px;
   padding-right: 10px;
-  }
+  }*/
   .navbar-btn {
     transform: translate(175px, -70px);
   padding-left: 10px;
@@ -797,6 +803,7 @@ footer li {
   }
   .email-link {
     font-size: 15px;
+    -webkit-font-size: 12px;
   }
   .left-header {
     transform: translate(-115px, -30px);
@@ -869,10 +876,15 @@ footer li {
   .footer-item {
     transform: translateX(-30px);
   }
+  /*input.btn.btn-secondary.footer-item{
+    -webkit-width:5px;
+  }*/
+
   h3.blog-group.col-lg-8.offset-lg-5.footer-item{
     width: 10%;
     padding-right: 20px;
     padding-left: 20px;
+    -webkit-font-size: 12px;
   }
   .process-container {
     height: 350px;
