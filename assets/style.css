@@ -19,11 +19,6 @@ body {
 }
 
 /*NAV BAR*/
-/*.collapse {
-  display: none;
-  visibility: hidden;
-}*/
-
 nav {
   width: 100%;
   background-color: white;
@@ -609,6 +604,13 @@ footer li {
 }
 
 /*MEDIA QUERIES*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     input[type=radio]:hover + label {
+       background-image: url("../assets/images/plus-circle-pinkred.png");
+     }
+}
+
 @media (max-width: 768px) {
 
   .navbar-collapse.collapse {
@@ -658,7 +660,7 @@ footer li {
   h3.blog-group.col-lg-8.offset-lg-5.footer-item {
     width: 10%;
     padding-right: 50px;
-    padding-left: 70px;
+    padding-left: 40px;
 }
 
   .learn-container {
