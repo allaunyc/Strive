@@ -82,10 +82,24 @@ $(document).ready(function() {
 
 $(window).bind('enterBreakpoint414', function() {
     // on click, the "thank u for signing up" div will appear
-    $(".learn-more-btn").click(function(event) {
-      event.preventDefault();
-      $(".submission-received").css("visibility", "visible");
-    });
+		$("#learn-more-form").submit(function(event) {
+	    event.preventDefault();
+
+			$.ajax({
+				url: '/submission',
+				method: 'post',
+				data: $(this).serialize(),
+				success: function(response) {
+					if (response.err) {
+						alert("Error in submitting")
+					} else {
+						$(".submission-received").css("visibility", "visible");
+					}
+				}
+			})
+	  });
+
+		$(".nav-link").hide();
 
     $(".process-content").hide();
     $(".imaginary-column").hide();
@@ -99,10 +113,24 @@ $(window).bind('enterBreakpoint414', function() {
 
 $(window).bind('enterBreakpoint768', function() {
     // on click, the "thank u for signing up" div will appear
-    $(".learn-more-btn").click(function(event) {
-      event.preventDefault();
-      $(".submission-received").css("visibility", "visible");
-    });
+		$("#learn-more-form").submit(function(event) {
+	    event.preventDefault();
+
+			$.ajax({
+				url: '/submission',
+				method: 'post',
+				data: $(this).serialize(),
+				success: function(response) {
+					if (response.err) {
+						alert("Error in submitting")
+					} else {
+						$(".submission-received").css("visibility", "visible");
+					}
+				}
+			})
+	  });
+
+		$(".nav-link").show();
 
     $(".process-content").show();
     $(".imaginary-column").show();
@@ -124,13 +152,15 @@ $(window).bind('enterBreakpoint1200',function() {
 			data: $(this).serialize(),
 			success: function(response) {
 				if (response.err) {
-					alert("Error in submiittin")
+					alert("Error in submitting")
 				} else {
 					$(".submission-received").css("visibility", "visible");
 				}
 			}
 		})
   });
+
+	$(".nav-link").show();
 
   $(".process-content").show();
   $(".imaginary-column").show();

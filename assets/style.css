@@ -787,9 +787,11 @@ footer li {
    visibility: visible!important;
  }
  .navbar-brand img {
-   width: 80px;
-   -webkit-width:30px;
- }
+    width: 110px;
+    height: 30px;
+    transform: translateX(70px);
+    -webkit-width: 30px;
+}
  .nav.navbar-nav {
     width: 414px;
   }
@@ -813,18 +815,15 @@ footer li {
     font-size: 14px;
   }
 
-  /*.navbar-btn {
-  transform: translateX(-40px);
-  padding-left: 10px;
-  padding-right: 10px;
-  }*/
   .navbar-btn {
-    transform: translate(175px, -70px);
-  padding-left: 10px;
-  padding-right: 10px;
-  width:80px;
-  font-size: 13px;
-  }
+    transform: translateX(90px);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100px;
+    font-size: 17px;
+    display: block;
+    height: 55px;
+}
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 100px;
 }
