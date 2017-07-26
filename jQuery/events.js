@@ -115,10 +115,22 @@ $(window).bind('enterBreakpoint768', function() {
 
 $(window).bind('enterBreakpoint1200',function() {
   // on click, the "thank u for signing up" div will appear
-  // $(".learn-more-btn").click(function(event) {
-  //   event.preventDefault();
-  //   $(".submission-received").css("visibility", "visible");
-  // });
+  $("#learn-more-form").submit(function(event) {
+    event.preventDefault();
+
+		$.ajax({
+			url: '/submission',
+			method: 'post',
+			data: $(this).serialize(),
+			success: function(response) {
+				if (response.err) {
+					alert("Error in submiittin")
+				} else {
+					$(".submission-received").css("visibility", "visible");
+				}
+			}
+		})
+  });
 
   $(".process-content").show();
   $(".imaginary-column").show();

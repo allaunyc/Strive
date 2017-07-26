@@ -1,0 +1,26 @@
+{
+  "name": "strive",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "sendgrid": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allaunyc/Strive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allaunyc/Strive/issues"
+  },
+  "homepage": "https://github.com/allaunyc/Strive#readme",
+  "keywords": [],
+  "description": ""
+}

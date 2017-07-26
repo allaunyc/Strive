@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var router = express.Router();
 
 
-var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+var sg = require('sendgrid')(process.env._SENDGRID_API_KEY);
 
 router.post('/submission', function(req,res) {
   var request = sg.emptyRequest({
@@ -16,7 +16,7 @@ router.post('/submission', function(req,res) {
         {
           to: [
             {
-              email: 'vcortes@berkeley.edu',
+              email: 'alau11@binghamton.edu',
             },
           ],
           'substitutions': {
@@ -29,12 +29,12 @@ router.post('/submission', function(req,res) {
       from: {
         email: 'test@example.com',
       },
-      content: [
-        {
-          type: 'text/html',
-          value: 'I\'m replacing the <strong>body tag</strong>',
-        },
-      ],
+      // content: [
+      //   {
+      //     type: 'text/html',
+      //     value: 'I\'m replacing the <strong>body tag</strong>',
+      //   },
+      // ],
       'template_id': process.env.TEMPLATE_ID,
     },
     });
@@ -42,11 +42,14 @@ router.post('/submission', function(req,res) {
     sg.API(request, function(error, response) {
     if (error) {
       console.log('Error response received');
+      res.json({ err: true });
+      return;
     }
     console.log(response);
     console.log(response.nameinput);
     console.log(response.emailinput);
     console.log(response.headers);
+    res.json({ err: false });
     });
   })
 
