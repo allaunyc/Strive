@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 
 const auth = require ('./routes/auth');
 const index = require ('./routes/index');
-const users = require ('./routes/users');
 
 const session = require ('express-session');
 const passport = require ('passport');
@@ -73,7 +72,7 @@ app.use(passport.session());
 app.use('/', auth(passport));
 
 app.use('/', (req,res,next) => {  //checks user is logged in for all routes
-  if (!req.admin) {
+  if (!req.user) {
     res.redirect('/login');
   } else {
     next();

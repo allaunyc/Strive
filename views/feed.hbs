@@ -1,0 +1,33 @@
+{{#if error}}
+  <div class="alert alert-danger" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span>
+    {{error}}
+  </div>
+{{/if}}
+
+<!--  NAV BAR: SEARCH INPUT, SEARCH BUTTON, LOGOUT BUTTON-->
+<div class="nav-bar">
+  <form method="POST">
+    <input type="text" name="search-input" placeholder="Search for name..." />
+    <input type="submit" value="Search" />
+    <a class="btn btn-danger" href="/logout">Logout</a>
+  </form>
+</div>
+
+<div class="feedPage">
+  <h3>E-mail Listserve</h3>
+  <table class="table table-hover">
+    <tbody>
+    {{#each users}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{email}}</td>
+        <td>{{role}}</td>
+        <td>{{time}}</td>
+        <td>{{referrer}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>

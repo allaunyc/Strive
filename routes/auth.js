@@ -5,7 +5,7 @@ var User = models.User;
 var Admin = models.Admin;
 const expressValidator = require('express-validator');
 
-export default function(passport) {
+module.exports = function(passport) {
 /* GET users listing. */
   router.use(expressValidator());
 
