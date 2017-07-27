@@ -15,6 +15,7 @@ const LocalStrategy = require ('passport-local');
 const mongoose = require ('mongoose');
 const models = require ('./models/models');
 var User = models.User;
+var Admin = models.Admin;
 const mongo = require('connect-mongo');
 var MongoStore = mongo(session);
 const routes = require('./sendgrid');
@@ -29,40 +30,40 @@ app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
   secret: 'rjgf3456y8wscv',
   store: new MongoStore({mongooseConnection: mongoose.connection})
 }));
 
-passport.serializeUser((user,done) => {
-  done(null, user._id);
+passport.serializeUser((admin,done) => {
+  done(null, admin._id);
 });
 
 passport.deserializeUser((id, done) => {
-  User.findById(id,(error, user) => {
-    done(error, user);
+  Admin.findById(id,(error, admin) => {
+    done(error, admin);
   })
 });
 
 
 passport.use(new LocalStrategy(function(username, password, done){
-  console.log("user",username, password);
-  User.findOne({username: username}, function(error, user) {
-    console.log(error, user);
+  console.log("admin",username, password);
+  Admin.findOne({username: username}, function(error, admin) {
+    console.log(error, admin);
     if (error) {
       console.log("error", error);
       return done(error);
     }
-    if (!user) {
-      console.log("user", user);
+    if (!admin) {
+      console.log("admin", admin);
       return done(null, false);
     }
-    if (user.password !== password) {
+    if (admin.password !== password) {
       return done(null, false);
     }
-    return done(null, user);
+    return done(null, admin);
   })
 }));
 
@@ -72,7 +73,7 @@ app.use(passport.session());
 app.use('/', auth(passport));
 
 app.use('/', (req,res,next) => {  //checks user is logged in for all routes
-  if (!req.user) {
+  if (!req.admin) {
     res.redirect('/login');
   } else {
     next();

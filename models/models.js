@@ -7,16 +7,18 @@ var Schema = mongoose.Schema;
 mongoose.connect(connect);
 // User schema
 var userSchema = new Schema({
-  username: String,
-  password: String
+  name: String,
+  email: String,
+  role: String,
+  time: Date,
+  referrer: String
 })
 
 var User = mongoose.model('User', userSchema);
 
 var adminSchema = new Schema({
-  title: String,
-  description: String,
-  imageUri: String
+  username: String,
+  password: String
 })
 
 var Admin = mongoose.model('Admin', adminSchema);
