@@ -19,6 +19,7 @@ const mongo = require('connect-mongo');
 var MongoStore = mongo(session);
 const routes = require('./sendgrid');
 
+
 mongoose.Promise = global.Promise;
 
 var app = express();
@@ -29,7 +30,7 @@ app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'public')));
 
 app.use(session({
   secret: 'rjgf3456y8wscv',
@@ -68,6 +69,10 @@ passport.use(new LocalStrategy(function(username, password, done){
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'views') + '/index.html');
+})
 
 app.use('/', auth(passport));
 

@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>{{title}}</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/style_admin.css' />
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Titillium+Web:400,600' rel='stylesheet' type='text/css'>
 
@@ -14,8 +14,22 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    $('#listServe').DataTable( {
+      "scrollY": "800px",
+      "scrollCollapse": true,
+      "paging": false
+    });
+  })
+  </script>
+
 </head>
 <body>
-{{{body}}}
+  {{{body}}}
 </body>
 </html>

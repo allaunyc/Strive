@@ -3,11 +3,30 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var router = express.Router();
+var User = require('./models/models').User;
 
 
 var sg = require('sendgrid')(process.env._SENDGRID_API_KEY);
 
 router.post('/submission', function(req,res) {
+  console.log(req.body);
+  var name = req.body.nameinput;
+    var email = req.body.emailinput;
+    var role = req.body.role;
+    var time = Date.now();
+    var referrer = req.body.referrer;
+
+  var newUser = new User({
+    name:name,
+    email:email,
+    role:role,
+    time:time,
+    referrer: referrer
+  });
+  newUser.save(function(error, savedUser) {
+  });
+
+
   var request = sg.emptyRequest({
     method: 'POST',
     path: '/v3/mail/send',

@@ -1,0 +1,51 @@
+body {
+ width:100%;
+ margin: 0;
+ padding: 0;
+ background-color: #F6F6F6;
+
+}
+/* FONTS */
+@font-face {
+ font-family: 'avenirBook';
+ src:url('/assets/fonts/avenirbook.eot');
+ src:url('/assets/fonts/avenirbook.eot?#iefix') format('embedded-opentype'),
+ url('/assets/fonts/avenirbook.ttf') format('truetype'),
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+   font-family: avenirBook;
+   src: url(/assets/fonts/avenirbook.ttf);
+}
+
+@font-face {
+ font-family: 'avenirMedium';
+ src:url('/assets/fonts/avenirMedium.eot');
+ src:url('/assets/fonts/avenirMedium.eot?#iefix') format('embedded-opentype'),
+ url('/assets/fonts/avenirMedium.ttf') format('truetype'),
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+   font-family: avenirMedium;
+   src: url(/assets/fonts/avenirMedium.ttf);
+}
+
+@font-face {
+ font-family: 'avenirHeavy';
+ src:url('/assets/fonts/AvenirLT-Heavy.eot');
+ src:url('/assets/fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+ url('/assets/fonts/avenirHeavy.ttf') format('truetype'),
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+@font-face {
+   font-family: avenirHeavy;
+   src: url(/assets/fonts/avenir-heavy-new.otf);
+
+}

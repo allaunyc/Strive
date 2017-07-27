@@ -8,16 +8,19 @@
 
 <!--  NAV BAR: SEARCH INPUT, SEARCH BUTTON, LOGOUT BUTTON-->
 <div class="nav-bar">
-  <form method="POST">
-    <input type="text" name="search-input" placeholder="Search for name..." />
-    <input type="submit" value="Search" />
     <a class="btn btn-danger" href="/logout">Logout</a>
-  </form>
 </div>
 
 <div class="feedPage">
   <h3>E-mail Listserve</h3>
-  <table class="table table-hover">
+  <table id="listServe" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Time</th>
+        <th>Referrer</th>
+    </thead>
     <tbody>
     {{#each users}}
       <tr>
