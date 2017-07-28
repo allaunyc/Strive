@@ -2,7 +2,6 @@ body {
  width:100%;
  margin: 0;
  padding: 0;
- background-color: #F6F6F6;
 
 }
 /* FONTS */
@@ -48,4 +47,17 @@ body {
    font-family: avenirHeavy;
    src: url(/assets/fonts/avenir-heavy-new.otf);
 
+}
+.login-container {
+  background-color: #F6F6F6;
+  height: 840px;
+}
+.login-page-title{
+  text-align: center;
+  font-size: 40px;
+  font-family: avenirHeavy;
+  padding: 40px;
+}
+.login-title{
+  font-family: avenirMedium;
 }

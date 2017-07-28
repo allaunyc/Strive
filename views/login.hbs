@@ -6,9 +6,11 @@
     {{error}}
   </div>
   {{/if}}
-  <h1> Login Page</h1>
-  <form method="POST" action="/login" style="max-width: 400px; margin: auto; margin-top: 50px; border: 0.5px solid gray; padding: 30px 30px 30px 30px">
-    <h3>Login</h3>
+  <div class="login-page-title">
+      <img style="width: 250px; margin: auto;" src="assets/images/Logo.png">
+  </div>
+  <form method="POST" action="/login" style="border-radius: 5px; font-family: avenirMedium; max-width: 400px;margin: auto;margin-top: 50px;border: 0.5px solid gray;padding: 30px 30px 30px 30px;background-color: #283C52;color: white;">
+    <h3 class="login-title">Login</h3>
     <div class="form-group">
       <label>Username</label>
       <input type="text" name="username" class="form-control">
@@ -18,7 +20,7 @@
       <input type="password" name="password" class="form-control">
     </div>
     <div class="form-group">
-      <button class="btn btn-success">Login</button>
+      <button style="background-color: #EA4750; border: none;"class="btn btn-success">Login</button>
     </div>
   </form>
 </div>
