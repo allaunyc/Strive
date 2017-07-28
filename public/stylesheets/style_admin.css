@@ -2,8 +2,12 @@ body {
  width:100%;
  margin: 0;
  padding: 0;
-
-}
+ top:0;
+ right:0;
+ bottom:0;
+ left:0;
+ height:100vh;
+ }
 /* FONTS */
 @font-face {
  font-family: 'avenirBook';
@@ -53,7 +57,7 @@ body {
 /*LOGIN STYLING*/
 .login-container {
   background-color: #F6F6F6;
-  height: 840px;
+  height: inherit;
 }
 .login-page-title{
   text-align: center;
@@ -73,7 +77,11 @@ body {
 /*FEED STYLING*/
 .feed-container{
   background-color: #283C52;
-  height: 860px;
+  position: absolute;
+  min-height: 100%;
+  top:0;
+  right:0;
+  left:0;
 }
 .feed-bar{
   padding:10px;
