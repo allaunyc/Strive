@@ -2,14 +2,12 @@ body {
  width:100%;
  margin: 0;
  padding: 0;
- top: 0;
+ top:0;
  right:0;
- bottom: 0;
- left: 0;
- height: 100vh;
-}
-
-
+ bottom:0;
+ left:0;
+ height:100vh;
+ }
 /* FONTS */
 @font-face {
  font-family: 'avenirBook';
@@ -81,9 +79,9 @@ body {
   background-color: #283C52;
   position: absolute;
   min-height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
+  top:0;
+  right:0;
+  left:0;
 }
 .feed-bar{
   padding:10px;
