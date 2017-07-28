@@ -48,26 +48,56 @@ body {
    src: url(/assets/fonts/avenir-heavy-new.otf);
 
 }
-<<<<<<< HEAD
 
-/*Feed page*/
-.dataTables_wrapper {
-    position: relative;
-    clear: both;
-    zoom: 1;
-    background-color: #F6F6F6;
-=======
+
+/*LOGIN STYLING*/
 .login-container {
   background-color: #F6F6F6;
   height: 840px;
 }
 .login-page-title{
   text-align: center;
-  font-size: 40px;
-  font-family: avenirHeavy;
+  font-size: 50px;
+  font-family: avenirMedium;
   padding: 40px;
+  color: #EA4750;
+  line-height: 10px;
+
 }
 .login-title{
   font-family: avenirMedium;
->>>>>>> ec49c2e17197ad3c3515c2b8c6bccb1e9b3b4405
+}
+.title-text{
+  display:inline-block;
+}
+/*FEED STYLING*/
+.feed-container{
+  background-color: #283C52;
+  height: 860px;
+}
+.feed-bar{
+  padding:10px;
+}
+.feed-title{
+  font-family: avenirMedium;
+  color:white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1;
+    background-color: #F6F6F6;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 0 20px 0 20px;
+  }
+div#listServe_filter{
+    padding: 20px;
+    border-radius: 10px;
+}
+.dataTables_wrapper .dataTables_filter input{
+    border-radius: 5px;
 }

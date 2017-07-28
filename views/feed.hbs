@@ -7,30 +7,35 @@
 {{/if}}
 
 <!--  NAV BAR: SEARCH INPUT, SEARCH BUTTON, LOGOUT BUTTON-->
-<div class="nav-bar">
-    <a class="btn btn-danger" href="/logout">Logout</a>
-</div>
+<div class="feed-container">
+  <div class="feed-bar">
+      <div class="strive-logo">
+        <img style="width: 150px; float: left;" src="assets/images/Logo.png">
+      </div>
+      <a class="btn btn-danger" style="float: right;"href="/logout">Logout</a>
+  </div>
 
-<div class="feedPage">
-  <h3>E-mail Listserve</h3>
-  <table id="listServe" class="table table-hover" cellspacing="0" width="100%">
-    <thead>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Role</th>
-        <th>Time</th>
-        <th>Referrer</th>
-    </thead>
-    <tbody>
-    {{#each users}}
-      <tr>
-        <td>{{name}}</td>
-        <td>{{email}}</td>
-        <td>{{role}}</td>
-        <td>{{time}}</td>
-        <td>{{referrer}}</td>
-      </tr>
-    {{/each}}
-    </tbody>
-  </table>
+  <div class="feedPage">
+    <h3 class="feed-title">E-mail Listserve</h3>
+    <table id="listServe" class="table table-hover" cellspacing="0" width="100%">
+      <thead>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Time</th>
+          <th>Referrer</th>
+      </thead>
+      <tbody>
+      {{#each users}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{email}}</td>
+          <td>{{role}}</td>
+          <td>{{time}}</td>
+          <td>{{referrer}}</td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </div>
 </div>
