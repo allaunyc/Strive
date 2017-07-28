@@ -49,3 +49,11 @@ body {
    src: url(/assets/fonts/avenir-heavy-new.otf);
 
 }
+
+/*Feed page*/
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1;
+    background-color: #F6F6F6;
+}
