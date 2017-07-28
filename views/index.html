@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0,
+  maximum-scale=1.0, user-scalable=no" />
+  <title>Strive</title>
+
+  <!-- Bootstrap stuff -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- stylesheet for jQuery UI-->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- jQuery UI for accordion-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Script setting up accordion-->
+   <script>
+   $( function() {
+     $( ".accordion" ).accordion();
+   } );
+   </script>
+
+  <!-- Our Styles -->
+  <link rel="stylesheet" href="/assets/stylesheets/style.css" type="text/css">
+  <script type="text/javascript" src="/assets/javascripts/events.js"></script>
+
+</head>
+<body>
+  <div class="strive-page">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="nav navbar-nav">
+            <!-- <div class="container-fluid"> -->
+            <!-- <div class="row"> -->
+            <div class="nav-item col-lg-2 col-xs-4 col-sm-2 offset-xs-1">
+              <a class="navbar-brand" href="#">
+                <img alt="Brand" src="/assets/images/Logo.png">
+              </a>
+            </div>
+            <div class="nav-item nav-link col-lg-3 col-xs-2 col-sm-3 "
+            id="nav-item-about">
+              <a href="#about"> About Us </a>
+            </div>
+            <div class="nav-item nav-link col-lg-3 col-xs-2 col-sm-3"
+            id="nav-item-approach">
+              <a href="#approach"> Our Approach </a>
+            </div>
+            <div class="nav-item nav-link col-lg-3 col-xs-2 col-sm-3"
+            id="nav-item-process">
+              <a href="#process"> College Process </a>
+            </div>
+            <div class="nav-item col-lg-2 col-xs-2 col-sm-1">
+              <a href="https://madetostrive.typeform.com/to/ds8SFP">
+                <button type="button" class="btn btn-primary navbar-btn">Sign Up </button>
+              </a>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- LEARN MORE SECTION -->
+    <div class="learn-container container">
+         <div class="row container-row">
+           <div class="learn-section col-lg-6 col-xs-12 col-sm-12">
+             <a name="learn"></a>
+             <div class="row">
+               <div class="learn-header col-lg-10">
+                 <h1> Applying to college should pump you up - not stress you out. </h1>
+               </div>
+             </div>
+             <div class="row">
+               <div class="learn-caption col-lg-10 offset-lg-1">
+                   We offer personalized college counseling to help you navigate the college process. The first session is on us.
+               </div>
+             </div>
+           </div>
+           <form id="learn-more-form"
+                  class="learn-form col-lg-6 col-xs-12 col-sm-12">
+
+             <div class="row form-row">
+               <div class="form-group col-lg-10">
+                 <input style="height:50px" class="form-control form-input" name="nameinput" id="name-input" placeholder="Full Name">
+               </div>
+             </div>
+             <div class="row form-row">
+               <div class="form-group col-lg-10 offset-lg-1">
+                 <input style="height:50px" type="email" class="form-control form-input" name="emailinput" id="email-input" placeholder="Email">
+               </div>
+             </div>
+             <div class="row form-row">
+               <div id="role-radio" class="form-group col-lg-10 offset-lg-1">
+                 <!-- <label>Role</label> -->
+                 Role:
+                   <input type="radio" name="role" value="student" id="student" checked><label for="student"> Student</label>
+                   <input type="radio" name="role" value="parent" id="parent" ><label for="parent">Parent</label>
+
+               </div>
+             </div>
+
+
+
+             <div class="row form-row">
+               <div class="form-group col-lg-10 offset-lg-1">
+                 <input style="height:50px" type="submit" class="btn btn-primary btn-block learn-more-btn form-input" value="LEARN MORE">
+               </div>
+             </div>
+             <div class="row form-row submission-received">
+               <div class="form-group col-lg-10 offset-lg-1 submission-text">
+                 <span class="glyphicon glyphicon-ok"></span>
+                 Submission received! Expect an email from us soon.
+               </div>
+             </div>
+           </form>
+         </div>
+       </div>
+
+
+    <!-- ABOUT US SECTION -->
+    <div class="about-container container">
+      <a name="about"></a>
+      <div class="row container-row" style="transform: translateY(20%);">
+        <div class="left-section col-lg-4 col-xs-12 col-sm-12">
+          <!-- <a name="about"></a> -->
+          <div class="row">
+            <div class="left-header col-lg-8">
+              <h1 class="left-text"id="left-text-about">About Us
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="about-content col-lg-8 col-xs-12 col-sm-12">
+          <div class="row">
+            <div class="blog-group col-lg-11">
+              <p>
+                College is a cornerstone of the American Dream, and most families <br>
+                do not feel they are making an informed decision about college.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="blog-group col-lg-10 offset-lg-1">
+              <p>
+                We are working with students, parents, counselors, and schools
+                to make high-quality college readiness accessible to all families.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="about-us-footer col-lg-10 offset-lg-1">
+              <a href="https://medium.com/@madetostrive/introducing-strive-16d500fce30a">
+                <input type="submit" class="btn btn-secondary footer-item"value="Visit Our Blog"/>
+              </a>
+              <h3 class="blog-group col-lg-8 offset-lg-5 footer-item">OR</h3>
+              <div class="email-text col-lg-10">
+                <div class="row footer-item" style="height: 50px">
+
+                  <div class="blog-group inline-block">meet our team by emailing us at
+                    <!-- <div class="row"> -->
+                    <p class="email-link">hello@madetostrive.com</p> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- OUR APPROACH SECTION -->
+    <div class="approach-container container">
+      <a name="approach"></a>
+      <div class="row container-row">
+        <!-- <div class="approach-left-header col-lg-4"> -->
+        <div class="left-section col-lg-4 col-xs-12 col-sm-12">
+          <div class="row">
+            <div class="left-header col-lg-8 ">
+              <h1 class="left-text" style="transform: translate(110px, 95px);"
+              id="left-text-approach">Our Approach
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="approach-info col-lg-8 col-xs-12 col-sm-12">
+          <div class="row">
+            <div class="approach-quad col-lg-6 col-xs-12 col-sm-6">
+              <!-- include icon -->
+              <div class="approach-info-title">
+                <span> <img src="/assets/images/usericon.png"
+                  alt="usericon"></span>
+                <span class="approach-info-header"> Student-Centered </span>
+              </div>
+              <div class="approach-info-caption">
+                This process is about you. We <br>
+                are here to guide you, but you <br>
+                will be in the driver's seat.
+              </div>
+            </div>
+            <div class="approach-quad col-lg-6 offset-lg-1 col-xs-12 col-sm-6">
+              <!-- include icon -->
+              <div class="approach-info-title">
+                <span> <img src="/assets/images/hashtagicon.png"
+                  alt="hashtagicon"> </span>
+                <span class="approach-info-header"> Data-Driven </span>
+              </div>
+              <div class="approach-info-caption">
+                Our advice is backed by <br>
+                research and conversations <br>
+                with admissions officers.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="approach-quad col-lg-6 col-xs-12 col-sm-6">
+              <!-- include icon -->
+              <div class="approach-info-title">
+                <span> <img src="/assets/images/comprehensiveicon.png"
+                  alt="comprehensiveicon"> </span>
+                <span class="approach-info-header"> Comprehensive </span>
+              </div>
+              <div class="approach-info-caption">
+                No cap on hours. We'll work <br>
+                with you until you feel ready <br>
+                to hit submit.
+              </div>
+            </div>
+            <div class="approach-quad col-lg-6 offset-lg-1 col-xs-12 col-sm-6">
+              <!-- include icon -->
+              <div class="approach-info-title">
+                <span> <img src="/assets/images/growthorientedicon.png"
+                  alt="growthorientedicon"> </span>
+                <span class="approach-info-header"> Growth-Oriented </span>
+              </div>
+              <div class="approach-info-caption">
+                The college process is an <br>
+                inflection point and we push <br>
+                you to reflect &amp; grow from it.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLLEGE PROCESS SECTION -->
+    <div class="process-container container">
+      <a name="process"></a>
+      <div class="row container-row">
+        <div class="left-section col-lg-4 col-xs-12 col-sm-12">
+          <!-- <a name="process"></a> -->
+          <div class="row">
+            <div class="left-header col-lg-8">
+              <h1 class="left-text" style="transform: translate(110px, 100px);"
+              id="left-text-process">College Process
+            </h1>
+            </div>
+          </div>
+        </div>
+        <div class="process-content col-lg-3 col-xs-12 col-sm-5">
+          <form>
+          <div class="row">
+            <div class="category col-lg-12 col-xs-12">
+              <input type="radio" name="test" id="a" checked><label for="a">College Selection</label>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12 col-xs-12" onclick="">
+              <input type="radio" name="test" id="b" ><label for="b">Essays</label>
+            </div>
+          </div>
+          <br>
+          <div class="row" onclick="">
+            <div class="category col-lg-12 col-xs-12">
+              <input type="radio" name="test" id="c"><label for="c">Recommendations</label>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12 col-xs-12">
+              <input type="radio" name="test" id="d"><label for="d">Interviews</label>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12 col-xs-12">
+              <input type="radio" name="test" id="e"><label for="e">Academics</label>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12 col-xs-12">
+              <input type="radio" name="test" id="f"><label for="f">Extracurriculars</label>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="category col-lg-12 col-xs-12">
+              <input type="radio" name="test" id="g"><label for="g">Financial Aid</label>
+            </div>
+          </div>
+        </form>
+          <br>
+          </div>
+
+          <div class="imaginary-column col-lg-5 col-xs-12 col-sm-7">
+            <div class="row">
+              <div class=" col-lg-12">
+                <div class="triangle-left-selection"></div>
+                <div id="college-selection-box" class="box-formatting">
+                  <p class="box-description">Picking schools is hard. Here are some resources to
+                   make your life easier:
+                   <br>
+                  <ul class="box-description">
+                    <li>Resource 1</li>
+                    <br>
+                    <li>Resource 2</li>
+                    <br>
+                    <li>Resource 3</li>
+                  </ul>
+                  <br>
+                 <p class="box-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Sed non magna mi. In ac venenatis orci, quis
+                  bibendum risus.
+                </p>
+                  <br>
+               </p>
+                <p class="take-title">OUR TAKE</p>
+                <p  class="box-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Sed non magna mi. In ac venenatis orci, quis
+                  bibendum risus.
+                </p>
+              </div>
+
+              <div class="triangle-left-essays"></div>
+              <div id="essays-box" class="box-formatting">
+                <p class="box-description">Writing essays is hard. Here are some resources to
+                 make your life easier:
+                 <br>
+                <ul class="box-description">
+                  <li>Example 1</li>
+                  <br>
+                  <li>Example 2</li>
+                  <br>
+                  <li>Example 3</li>
+                </ul>
+                <br>
+               <p class="box-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed non magna mi. In ac venenatis orci, quis
+                bibendum risus.
+              </p>
+                <br>
+             </p>
+              <p class="take-title">OUR TAKE</p>
+              <p  class="box-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed non magna mi. In ac venenatis orci, quis
+                bibendum risus.
+              </p>
+            </div>
+
+            <div class="triangle-left-recommendations"></div>
+            <div id="recommendations-box" class="box-formatting">
+              <p class="box-description">Figuring out who to ask for
+              recommendations is hard. Here are some resources to
+               make your life easier:
+               <br>
+              <ul class="box-description">
+                <li>Method 1</li>
+                <br>
+                <li>Method 2</li>
+                <br>
+                <li>Method 3</li>
+              </ul>
+              <br>
+             <p class="box-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed non magna mi. In ac venenatis orci, quis
+              bibendum risus.
+            </p>
+              <br>
+           </p>
+            <p class="take-title">OUR TAKE</p>
+            <p  class="box-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed non magna mi. In ac venenatis orci, quis
+              bibendum risus.
+            </p>
+          </div>
+
+          <div class="triangle-left-interviews"></div>
+          <div id="interviews-box" class="box-formatting">
+            <p class="box-description">Tackling interviews is hard.
+            Here are some tips to get through it easier:
+             <br>
+            <ul class="box-description">
+              <li>Stay calm</li>
+              <br>
+              <li>Be yourself</li>
+              <br>
+              <li>Dont panic</li>
+            </ul>
+            <br>
+           <p class="box-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Sed non magna mi. In ac venenatis orci, quis
+            bibendum risus.
+          </p>
+            <br>
+         </p>
+          <p class="take-title">OUR TAKE</p>
+          <p  class="box-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Sed non magna mi. In ac venenatis orci, quis
+            bibendum risus.
+          </p>
+        </div>
+
+        <div class="triangle-left-academics"></div>
+        <div id="academics-box" class="box-formatting">
+          <p class="box-description">ACADEMICS ACADEMICS ACADEMICS.
+          Here are some tips to get through it easier:
+           <br>
+          <ul class="box-description">
+            <li>grades</li>
+            <br>
+            <li>the dreaded SAT</li>
+            <br>
+            <li>class participation</li>
+          </ul>
+          <br>
+         <p class="box-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Sed non magna mi. In ac venenatis orci, quis
+          bibendum risus.
+        </p>
+          <br>
+       </p>
+        <p class="take-title">OUR TAKE</p>
+        <p  class="box-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Sed non magna mi. In ac venenatis orci, quis
+          bibendum risus.
+        </p>
+      </div>
+
+      <div class="triangle-left-extracurriculars"></div>
+      <div id="extracurriculars-box" class="box-formatting">
+        <p class="box-description">EXTRACURRICULARS.
+        What hobbies or interests do you have outside of class?
+         <br>
+        <ul class="box-description">
+          <li>sports</li>
+          <br>
+          <li>music</li>
+          <br>
+          <li>coding</li>
+        </ul>
+        <br>
+       <p class="box-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed non magna mi. In ac venenatis orci, quis
+        bibendum risus.
+      </p>
+        <br>
+     </p>
+      <p class="take-title">OUR TAKE</p>
+      <p  class="box-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed non magna mi. In ac venenatis orci, quis
+        bibendum risus.
+      </p>
+    </div>
+
+    <div class="triangle-left-financial-aid"></div>
+    <div id="financial-aid-box" class="box-formatting">
+      <p class="box-description">How to pay for college?
+        What resources can you turn to for help?
+       <br>
+      <ul class="box-description">
+        <li>FAFSA</li>
+        <br>
+        <li>student loans</li>
+        <br>
+        <li>scholarships</li>
+      </ul>
+      <br>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+      <br>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+  </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Implement jquery accordion -->
+  <div class="accordion">
+    <h3>College Selection</h3>
+    <div>
+      <p class="box-description">Picking schools is hard. Here are some resources to
+       make your life easier:
+      <ul class="box-description">
+        <li>Resource 1</li>
+        <li>Resource 2</li>
+        <li>Resource 3</li>
+      </ul>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+  </p>
+  <p class="take-title">OUR TAKE</p>
+  <p  class="box-description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Sed non magna mi. In ac venenatis orci, quis
+    bibendum risus.
+  </p>
+    </div>
+
+    <h3>Essays</h3>
+    <div>
+      <p class="box-description">Writing essays is hard. Here are some resources to
+       make your life easier:
+      <ul class="box-description">
+        <li>Example 1</li>
+        <li>Example 2</li>
+        <li>Example 3</li>
+      </ul>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+    </div>
+
+    <h3>Recommendations</h3>
+    <div>
+      <p class="box-description">Figuring out who to ask for
+      recommendations is hard. Here are some resources to
+       make your life easier:
+      <ul class="box-description">
+        <li>Method 1</li>
+        <li>Method 2</li>
+        <li>Method 3</li>
+      </ul>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+    </div>
+
+    <h3>Interviews</h3>
+    <div>
+      <p class="box-description">Tackling interviews is hard.
+      Here are some tips to get through it easier:
+      <ul class="box-description">
+        <li>Stay calm</li>
+        <li>Be yourself</li>
+        <li>Dont panic</li>
+      </ul>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+    </div>
+
+    <h3>Academics</h3>
+    <div>
+      <p class="box-description">ACADEMICS ACADEMICS ACADEMICS.
+      Here are some tips to get through it easier:
+      <ul class="box-description">
+        <li>grades</li>
+        <li>the dreaded SAT</li>
+        <li>class participation</li>
+      </ul>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+    </div>
+
+    <h3>Extracurriculars</h3>
+    <div>
+      <p class="box-description">EXTRACURRICULARS.
+      What hobbies or interests do you have outside of class?
+      <ul class="box-description">
+        <li>sports</li>
+        <li>music</li>
+        <li>coding</li>
+      </ul>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+    </div>
+
+    <h3>Financial Aid</h3>
+    <div>
+      <p class="box-description">How to pay for college?
+        What resources can you turn to for help?
+      <ul class="box-description">
+        <li>FAFSA</li>
+        <li>student loans</li>
+        <li>scholarships</li>
+      </ul>
+     <p class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+   </p>
+    <p class="take-title">OUR TAKE</p>
+    <p  class="box-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed non magna mi. In ac venenatis orci, quis
+      bibendum risus.
+    </p>
+    </div>
+
+  </div>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer-container row">
+        <div class="col-xs-12">
+        <div class="footer-copyright">
+          &copy; 2017 Made To Strive, All Rights Reserved.
+        </div>
+        <ul class="footer-icon-group">
+          <li class="footer-icon">
+              <a href="https://www.facebook.com/madetostrive">
+                <div class="fb-logo">
+                  <img src="/assets/images/facebook.png" >
+                </div>
+              </a>
+          </li>
+          <li class="footer-icon">
+              <a href="https://twitter.com/made_to_strive">
+                <div class="twitter-logo">
+                  <img src="/assets/images/twitter.png"
+                  style="transform: translateY(-1px);">
+                </div>
+              </a>
+          </li>
+          <li class="footer-icon">
+              <a href="https://www.instagram.com/made_to_strive/">
+                <div class="instagram-logo">
+                  <img src="/assets/images/instagram.png"
+                  style="transform: translateY(-1px);">
+                </div>
+              </a>
+          </li>
+          <li class="footer-icon">
+              <a href="hello@madetostrive.com">
+                <div class="mail-logo">
+                  <img src="/assets/images/mail.png"
+                  style="transform: translateY(-2px);">
+                </div>
+              </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
