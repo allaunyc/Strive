@@ -75,6 +75,7 @@ app.get('/', function(req, res) {
 })
 
 app.use('/', auth(passport));
+app.use('/', routes);
 
 app.use('/', (req,res,next) => {  //checks user is logged in for all routes
   if (!req.user) {
@@ -85,7 +86,6 @@ app.use('/', (req,res,next) => {  //checks user is logged in for all routes
 })
 
 app.use('/', index);
-app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
