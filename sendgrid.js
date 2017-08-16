@@ -12,7 +12,7 @@ router.post('/submission', function(req,res) {
   console.log(req.body);
   var name = req.body.nameinput;
     var email = req.body.emailinput;
-    var role = req.body.role;
+    var role = !req.body.role ? 'parent' : 'student';
     var time = Date.now();
     var referrer = req.body.referrer;
 

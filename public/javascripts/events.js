@@ -81,6 +81,7 @@ $(document).ready(function() {
   });
 
 $(window).bind('enterBreakpoint414', function() {
+	$("#learn-more-form").unbind("submit");
     // on click, the "thank u for signing up" div will appear
 		$("#learn-more-form").submit(function(event) {
 	    event.preventDefault();
@@ -93,6 +94,7 @@ $(window).bind('enterBreakpoint414', function() {
 					if (response.err) {
 						alert("Error in submitting")
 					} else {
+						$('#learn-more-form')[0].reset();
 						$(".submission-received").css("visibility", "visible");
 					}
 				}
@@ -112,10 +114,11 @@ $(window).bind('enterBreakpoint414', function() {
   });
 
 $(window).bind('enterBreakpoint768', function() {
+	$("#learn-more-form").unbind("submit");
+
     // on click, the "thank u for signing up" div will appear
 		$("#learn-more-form").submit(function(event) {
 	    event.preventDefault();
-
 			$.ajax({
 				url: '/submission',
 				method: 'post',
@@ -124,6 +127,7 @@ $(window).bind('enterBreakpoint768', function() {
 					if (response.err) {
 						alert("Error in submitting")
 					} else {
+						$('#learn-more-form')[0].reset();
 						$(".submission-received").css("visibility", "visible");
 					}
 				}
@@ -142,6 +146,7 @@ $(window).bind('enterBreakpoint768', function() {
   });
 
 $(window).bind('enterBreakpoint1200',function() {
+	$("#learn-more-form").unbind("submit");
   // on click, the "thank u for signing up" div will appear
   $("#learn-more-form").submit(function(event) {
     event.preventDefault();
@@ -154,6 +159,7 @@ $(window).bind('enterBreakpoint1200',function() {
 				if (response.err) {
 					alert("Error in submitting")
 				} else {
+					$('#learn-more-form')[0].reset();
 					$(".submission-received").css("visibility", "visible");
 				}
 			}
