@@ -4,9 +4,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var router = express.Router();
 var User = require('./models/models').User;
+var config = require('./config/config.json')
 
-
-var sg = require('sendgrid')(process.env._SENDGRID_API_KEY);
+var sg = require('sendgrid')(process.env._SENDGRID_API_KEY || config._SENDGRID_API_KEY);
 
 router.post('/submission', function(req,res) {
   console.log(req.body);
@@ -54,7 +54,7 @@ router.post('/submission', function(req,res) {
       //     value: 'I\'m replacing the <strong>body tag</strong>',
       //   },
       // ],
-      'template_id': process.env.TEMPLATE_ID,
+      'template_id': process.env.TEMPLATE_ID || config.TEMPLATE_ID,
     },
     });
 
