@@ -35,7 +35,7 @@ router.post('/submission', function(req,res) {
         {
           to: [
             {
-              email: 'alau11@binghamton.edu',
+              email: process.env.SENDGRID_EMAIL || config.SENDGRID_EMAIL,
             },
           ],
           'substitutions': {
@@ -46,7 +46,7 @@ router.post('/submission', function(req,res) {
         },
       ],
       from: {
-        email: 'test@example.com',
+        email: 'site@madetostrive.com',
       },
       // content: [
       //   {
