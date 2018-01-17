@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-var connect = process.env.MONGODB_URI;
+var config = require('../config/config.json');
+var connect = process.env.MONGODB_URI || config.MONGODB_URI;
 var Schema = mongoose.Schema;
 
 // If you're getting an error here, it's probably because
