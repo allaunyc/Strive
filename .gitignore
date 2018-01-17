@@ -1,3 +1,4 @@
 # dotenv environment variables file
 env.sh
 sendgrid.env
+node_modules
